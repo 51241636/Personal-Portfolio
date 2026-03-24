@@ -727,24 +727,22 @@ footer {
 
 
 }
-#aboutSection > h2{
-   position: absolute;
-  left: 50%;
-
+.about-heading{
+  position: absolute;
   color: white;
-  /*z-index: 1;*/
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+}
+
+.about-heading >p{
+
 }
 #aboutSection > .gridHandling01{
-  margin-top: 80px;
+  margin-top: 100px;
 }
-/*.about-content h1{*/
-/*  font-size: 3rem;*/
-/*}*/
-/*.about-content p{*/
-/*  font-size: 1.8rem;*/
-/*}*/
-/*#aboutSection > .gridHandling01 > div:first-child{*/
-/*  width: 100px;*/
-/*  height: 100px;*/
-/*  background-color: blue;*/
-/*}*/
+.about-content{
+  text-align: center;
+  color: white;
+}
