@@ -654,7 +654,10 @@ footer {
 
 
   }
+  #aboutSection > .gridHandling02{
+  grid-template-columns: 1fr 1fr;
 
+}
 
   #MainDiv01-leftSide {
     grid-column: 1;
@@ -797,11 +800,12 @@ footer {
   margin-top: 20px;
 
 }
-.gridHandling02 > div{
+.gridHandling02 > a{
   min-width: 5px;
   height: 140px;
   margin-right: 10px;
   margin-left: 10px;
+  margin-bottom: 10px;
   border-radius: 3rem;
   display: flex;
   justify-content: space-between;
@@ -813,3 +817,4 @@ footer {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
+
