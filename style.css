@@ -93,7 +93,7 @@
 /* ===== BACKGROUND BLOBS ===== */
 
 /* FIX: was missing position:absolute — caused layout shift */
-#backGroundColor01 {
+.backGroundColor01 {
   position: absolute;
   top: 0; left: 0;
   width: 418px;
@@ -104,7 +104,7 @@
   filter: blur(72px);
   z-index: -1;
 }
-#backGroundColor02 {
+.backGroundColor02 {
   position: absolute;
   top: 0; right: 0;
   width: 418px;
@@ -115,7 +115,7 @@
   filter: blur(72px);
   z-index: -1;
 }
-#backGroundColor03 {
+.backGroundColor03 {
   position: absolute;
   bottom: 0; left: 0;
   width: 418px;
@@ -126,7 +126,7 @@
   filter: blur(72px);
   z-index: -1;
 }
-#backGroundColor04 {
+.backGroundColor04 {
   position: absolute;
   bottom: 0; right: 0;
   width: 418px;
@@ -203,7 +203,7 @@ header {
 }
 
 /* ===== MAIN GRID ===== */
-#MainSection > .gridHandling01 {
+ .gridHandling01 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
@@ -214,6 +214,7 @@ header {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  border: 2px solid blue;
 }
 
 /* ===== LEFT SIDE ===== */
@@ -711,3 +712,39 @@ footer {
 
   #MainDiv01-rightSide { min-height: 380px; }
 }
+#aboutSection{
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.about-img{
+  width: 40vw;
+  height: 70vh;
+  border: 2px solid red;
+
+
+}
+#aboutSection > h2{
+   position: absolute;
+  left: 50%;
+
+  color: white;
+  /*z-index: 1;*/
+}
+#aboutSection > .gridHandling01{
+  margin-top: 80px;
+}
+/*.about-content h1{*/
+/*  font-size: 3rem;*/
+/*}*/
+/*.about-content p{*/
+/*  font-size: 1.8rem;*/
+/*}*/
+/*#aboutSection > .gridHandling01 > div:first-child{*/
+/*  width: 100px;*/
+/*  height: 100px;*/
+/*  background-color: blue;*/
+/*}*/
