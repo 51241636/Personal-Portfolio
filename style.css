@@ -208,12 +208,13 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 25px;
   width: 100%;
-  max-width: 1300px;
+  min-width: 300px;
   padding-top: 55px;
   box-sizing: border-box;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+   border: 2px solid red;
 }
 
 /* ===== LEFT SIDE ===== */
@@ -389,7 +390,7 @@ header {
 #socialMediaIcon > a:nth-child(5):hover { color: #ee2a7b;   border-color: #ee2a7b;   box-shadow: 0 0 30px #ee2a7b; }
 
 /* ===== RIGHT SIDE SQUARES (orbiting animation) ===== */
-#square01 {
+.square01 {
   position: absolute;
   left: 120px; top: 150px;
   width: 350px; height: 350px;
@@ -397,7 +398,7 @@ header {
   transform: rotate(-60deg);
   animation: scrolling01 50s infinite linear;
 }
-#square02 {
+.square02 {
   position: absolute;
   left: 100px; top: 140px;
   width: 400px; height: 400px;
@@ -405,7 +406,7 @@ header {
   transform: rotate(-60deg);
   animation: scrolling02 40s infinite linear;
 }
-#square03 {
+.square03 {
   position: absolute;
   left: 100px; top: 120px;
   width: 400px; height: 400px;
@@ -415,7 +416,7 @@ header {
 }
 
 /* FIX: square04 was in HTML but had no CSS rule */
-#square04 {
+.square04 {
   position: absolute;
   left: 80px; top: 100px;
   width: 440px; height: 440px;
@@ -617,11 +618,30 @@ footer {
     gap: 0;
     margin: -300px auto 0 auto;
   }
+  #aboutSection > .gridHandling01{
+    grid-template-columns: 1fr;
+    /*padding-top: 55px;*/
+    /*padding-left: 12px;*/
+    /*padding-right: 12px;*/
+    /*gap: 0;*/
+    /*margin: -300px auto 0 auto;*/
+  }
+  .about-img{
+    width: 40vw;
+    max-height: 25rem;
+    /*height: 20vh;*/
+    border: 2px solid red;
+
+
+
+
+  }
 
   #MainDiv01-leftSide {
     grid-column: 1;
     padding: 10px 0;
     margin-top: 300px;
+    /*text-align: center;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -630,12 +650,10 @@ footer {
 
   #MainDiv01-rightSide {
     grid-column: 1;
-    min-height: 460px;
+    min-height:600px;
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    left: 19%;
-    /*transform: translateX(-50%);*/
+    justify-content: center;
+    align-items: center;
 
 
 
@@ -712,7 +730,7 @@ footer {
   #square03 { left: 0px;  top: 40px; width: 260px; height: 260px; }
   #square04 { left: -10px; top: 20px; width: 280px; height: 280px; }
 
-  #MainDiv01-rightSide { min-height: 380px; }
+  #MainDiv01-rightSide { max-height: 380px; }
 }
 #aboutSection{
   width: 100%;
@@ -726,6 +744,8 @@ footer {
   width: 40vw;
   height: 70vh;
   border: 2px solid red;
+
+
 
 
 }
