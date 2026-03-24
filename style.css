@@ -642,10 +642,13 @@ footer {
     /*margin: -300px auto 0 auto;*/
   }
   .about-img{
-    width: 40vw;
-    max-height: 25rem;
+    min-width: 100px;
+    min-height:600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     /*height: 20vh;*/
-    border: 2px solid red;
 
 
 
@@ -756,9 +759,9 @@ footer {
   z-index: 0;
 }
 .about-img{
-  width: 40vw;
-  height: 70vh;
-  border: 2px solid red;
+  position: relative;
+  min-width: 100px;
+  min-height: 500px;
 
 
 
