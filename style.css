@@ -13,16 +13,16 @@
 #backGroundColor04 {
   z-index: -1;
 }
-#backGroundColor01{
-  position: absolute;
-  width: 418px;
-  height: 384px;
-  background-color:#470981 ;
-  opacity: 100%;
-  border-radius: 100%;
-  filter: blur(100px);
+/*#backGroundColor01{*/
+/*  position: absolute;*/
+/*  width: 418px;*/
+/*  height: 384px;*/
+/*  background-color:#470981 ;*/
+/*  opacity: 0%;*/
+/*  border-radius: 100%;*/
+/*  filter: blur(100px) brightness(0);*/
 
-}
+/*}*/
 #backGroundColor02{
   position: absolute;
   top: 0;
@@ -99,7 +99,7 @@
   width: 418px;
   height: 384px;
   background-color: #470981;
-  opacity: 72%;
+  opacity: 32%;
   border-radius: 100%;
   filter: blur(72px);
   z-index: -1;
@@ -110,7 +110,7 @@
   width: 418px;
   height: 384px;
   background-color: #004D5D;
-  opacity: 72%;
+  opacity: 32%;
   border-radius: 100%;
   filter: blur(72px);
   z-index: -1;
@@ -121,7 +121,7 @@
   width: 418px;
   height: 384px;
   background-color: #004D5D;
-  opacity: 72%;
+  opacity: 32%;
   border-radius: 100%;
   filter: blur(72px);
   z-index: -1;
@@ -132,7 +132,7 @@
   width: 418px;
   height: 384px;
   background-color: #470981;
-  opacity: 72%;
+  opacity: 35%;
   border-radius: 100%;
   filter: blur(72px);
   z-index: -1;
@@ -825,17 +825,25 @@ footer {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
-footer > .gridHandling03{
+
+footer > .gridHandling03 {
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   width: 100%;
   min-width: 300px;
-  padding-top: 55px;
+  /*padding-top: 20px;*/
   box-sizing: border-box;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   padding-left: 20px;
   padding-right: 20px;
+}
+.gridHandling03 > div:first-child{
+  background-color: red;
+
+  /*position: relative;*/
+  /*top: 0;*/
 }
 
 
