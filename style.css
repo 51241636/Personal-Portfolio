@@ -710,18 +710,18 @@ footer {
   }
   .square02{
     position: absolute;
-    width: 265px;
-    height: 265px;
+    width: 230px;
+    height: 230px;
   }
   .square03{
     position: absolute;
-    width: 265px;
-    height: 265px;
+    width: 230px;
+    height: 230px;
   }
   .square04{
     position: absolute;
-    width: 285px;
-    height: 285px;
+    width: 240px;
+    height: 240px;
   }
   #buttons > button::before,
   #buttons > button::after {
@@ -1094,28 +1094,28 @@ footer {
 /*.projectShowcase-section > .gridHandling03{*/
 /*  margin-top: 200px;*/
 /*}*/
-.watermark {
-  position: absolute;
-  top: calc(50vh - 27vh);
-  left: 0;
-  transform: translate(-50%, -50%);
+/*.watermark {*/
+/*  position: absolute;*/
+/*  top: calc(50vh - 27vh);*/
+/*  left: 0;*/
+/*  transform: translate(-50%, -50%);*/
 
-  font-size: 250px;
-  font-weight: 900;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255,255,255,0.3); /* outline look */
+/*  font-size: 250px;*/
+/*  font-weight: 900;*/
+/*  color: transparent;*/
+/*  -webkit-text-stroke: 1px rgba(255,255,255,0.3); !* outline look *!*/
 
-  white-space: nowrap;
-  pointer-events: none;
-  user-select: none;
+/*  white-space: nowrap;*/
+/*  pointer-events: none;*/
+/*  user-select: none;*/
 
-  animation: scrollWatermark  30s linear infinite;
-}
+/*  animation: scrollWatermark  30s linear infinite;*/
+/*}*/
 
-/* animation */
-@keyframes scrollWatermark {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); } /* moves half container width, seamless loop */
-}
+/*!* animation *!*/
+/*@keyframes scrollWatermark {*/
+/*  from { transform: translateX(0); }*/
+/*  to   { transform: translateX(-50%); } !* moves half container width, seamless loop *!*/
+/*}*/
 
 
