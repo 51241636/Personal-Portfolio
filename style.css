@@ -1,6 +1,6 @@
 /* ===== MAIN SECTION ===== */
 #MainSection {
-  width: 100%;
+  width: 100vw;
   min-height: 50px;
   background-color: black;
   position: relative;
