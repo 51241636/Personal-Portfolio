@@ -967,6 +967,7 @@ footer {
 
 /* HEADING */
 .project-Heading {
+  min-width: 400px;
   position: absolute;
   top: 50px;
   left: 50%;
@@ -978,7 +979,7 @@ footer {
 .project-gridHandling03 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 20px;
   padding-top: 250px;
   padding-left: 50px;
   padding-right: 50px;
@@ -995,7 +996,7 @@ footer {
 
 /* CARD */
 .project01-card {
-  width: 300px;
+  width: 400px;
   height: 400px;
   border-radius: 20px;
   border: 1px solid rgba(255,255,255,0.2);
