@@ -1,7 +1,8 @@
 /* ===== MAIN SECTION ===== */
 #MainSection {
   width: 100vw;
-  min-height: 50px;
+  /*height: 100vh;*/
+  min-height: 100vh;
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -171,6 +172,10 @@ header {
   font-size: 20px;
   margin-top: 10px;
   margin-right: 50px;
+
+}
+#navigationName > #navIcon{
+  display: none;
 }
 #navigationName > a {
   margin: 20px;
@@ -208,6 +213,7 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 25px;
   /*min-width: ;*/
+   min-height: 10px;
   min-width: 10px;
   padding-top: 55px;
   box-sizing: border-box;
@@ -218,6 +224,8 @@ header {
 
 /* ===== LEFT SIDE ===== */
 #MainDiv01-leftSide {
+  min-width: 10px;
+  min-height: 10px;
   grid-column: 1;
   display: flex;
   flex-direction: column;
@@ -226,6 +234,7 @@ header {
   color: white;
   font-weight: bolder;
   z-index: 1;
+
 }
 
 /* ===== RIGHT SIDE ===== */
@@ -620,7 +629,64 @@ footer {
   #Line03 { font-size: 1.6em; }
   #buttons { margin-top: 40px; }
 }
+@media (max-width:3000px ) and (min-width: 1600px) {
+  #MainDiv01-leftSide{
+    margin-left: 100px;
+    font-size: 23px;
+  }
+  #hireAvailability{width:350px }
+  #qualificationIcon > div:nth-child(3) { width: 150px; left: 220px; top: 0; }
+  .square01 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px; height: 400px;
+    border: 1px solid white;
+    transform: rotate(-60deg);
+    animation: scrolling01 50s infinite linear;
+  }
+  .square02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 450px; height: 450px;
+    border: 1px solid white;
+    transform: rotate(-60deg);
+    animation: scrolling02 40s infinite linear;
+  }
+  .square03 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 450px; height: 450px;
+    border: 1px solid white;
+    transform: rotate(80deg);
+    animation: scrolling01 40s infinite linear;
+  }
 
+  /* FIX: square04 was in HTML but had no CSS rule */
+  .square04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform:rotate(30deg);
+    width: 490px; height: 490px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: scrolling02 60s infinite linear;
+  }
+}
 /* ---- Mobile: ≤ 768px ---- */
 @media (max-width: 768px) {
   #MainSection {
@@ -749,23 +815,32 @@ footer {
   }
   .square01{
     position: absolute;
-    width:215px;
-    height: 215px;
+    width:230px;
+    height: 230px;
   }
   .square02{
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 255px;
+    height: 255px;
   }
   .square03{
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 255px;
+    height: 255px;
   }
   .square04{
     position: absolute;
-    width: 240px;
-    height: 240px;
+    width: 280px;
+    height: 280px;
+  }
+  header > #navigationName > a{
+    display: none;
+
+  }
+  #navigationName > #navIcon{
+    display: block;
+    color: white;
+    font-size: 25px;
   }
   #buttons > button::before,
   #buttons > button::after {
