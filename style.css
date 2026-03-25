@@ -450,12 +450,13 @@ header {
 @keyframes scrolling02 {
   100% { transform: rotate(-360deg); }
 }
-#batches{
-  position: absolute;
-  top: 0;
-  width: 300px;
-  height: 300px;
-}
+/*#batches{*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*   width: 500px;*/
+/*  height: 700px;*/
+/*  border: 2px solid red;*/
+/*}*/
 
 /* ===== FLOATING BADGES ===== */
 #experienceBatch {
@@ -465,7 +466,7 @@ header {
   height: 40px;
   color: gray;
   font-weight: bolder;
-  animation: breathingBadge 2s infinite linear;
+  /*animation: breathingBadge 2s infinite linear;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,14 +481,14 @@ header {
 }
 #statusBatch {
   position: absolute;
-  top: 0;
+  top: 300px;
   color: gray;
   font-weight: bolder;
   /*margin-left: 160px;*/
   width: 130px;
-  left: 300px;
+  /*left: 700px;*/
   height: 45px;
-  animation: breathingBadgeStatus 2s infinite linear;
+  /*animation: breathingBadgeStatus 2s infinite linear;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -509,7 +510,7 @@ header {
   width: 100px;
   height: 45px;
   top: 400px;
-  animation: breathingBadgeStatus 2s infinite linear;
+  /*animation: breathingBadgeStatus 2s infinite linear;*/
   display: flex;
   justify-content: center;
   align-items: center;
