@@ -984,6 +984,16 @@ footer {
   padding-right: 50px;
 }
 
+/* PROJECT ITEMS */
+.project01,
+.project02,
+.project03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
 /*.projectShowcase-section{*/
