@@ -974,6 +974,16 @@ footer {
   text-align: center;
   color: white;
 }
+/* GRID */
+.project-gridHandling03 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 
 
 /*.projectShowcase-section{*/
