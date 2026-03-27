@@ -1,12 +1,13 @@
 /* ===== MAIN SECTION ===== */
 #MainSection {
-  width: 100vw;
+  max-width: 100vw;
   /*height: 100vh;*/
   min-height: 100vh;
   background-color: black;
   position: relative;
   overflow: hidden;
   z-index: 0;
+
 }
 #backGroundColor01,
 #backGroundColor02,
@@ -212,15 +213,14 @@ header {
  .gridHandling01 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  /*gap: 25px;*/
   /*min-width: ;*/
    min-height: 10px;
   min-width: 10px;
   padding-top: 55px;
   box-sizing: border-box;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
 }
 
 /* ===== LEFT SIDE ===== */
@@ -230,7 +230,7 @@ header {
   grid-column: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
   padding: 20px;
   color: white;
   font-weight: bolder;
@@ -1124,9 +1124,10 @@ footer {
 }
 /* GRID */
 .project-gridHandling03 {
+  min-width: 10px;
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
-  border: 2px solid red;
+  /*border: 2px solid red;*/
   gap: 20px;
   padding-top: 250px;
 }
@@ -1138,6 +1139,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /*!* CARD *!*/
@@ -1183,14 +1185,13 @@ footer {
   flex-direction: column;
 
   /*gap: 10px;*/
-  /*padding: 50px;*/
   /*padding-top: 200px;*/
   /*padding-left: 80px;*/
   /*padding: 150px;*/
   color: white;
   font-weight: bolder;
   z-index: 1;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 .Used-tech-pos{
   width: 330px;
@@ -1244,13 +1245,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /*padding: 50px;*/
   /*padding-top: 200px;*/
   /*padding-left: 80px;*/
   color: white;
   font-weight: bolder;
   z-index: 1;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 .project03{
   /*grid-column: 3;*/
@@ -1262,7 +1262,7 @@ footer {
   color: white;
   font-weight: bolder;
   z-index: 1;
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 /*.project01-card{*/
 /*  width:350px;*/
