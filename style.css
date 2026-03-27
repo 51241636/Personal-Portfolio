@@ -1301,8 +1301,27 @@ footer {
 .exercise-gridHandling > .project01,.project02,.project03{
   min-height: 300px;
   margin-bottom: 60px;
+  opacity: 32%;
 }
-.exercise-gridHandling > .project01
+.exercise-gridHandling > .project01{
+  background: url("assets/assignment02.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+
+}
+.exercise-gridHandling > .project02{
+  background: url("assets/assignment03.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.exercise-gridHandling > .project03{
+  background: url("assets/assignment01.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+}
 
 .watermark {
   position: absolute;
