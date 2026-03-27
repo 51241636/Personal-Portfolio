@@ -978,11 +978,11 @@ footer {
 }
 
 #aboutSection .star.star6{
-  animation-delay: -5s;
+  animation-delay: -1s;
   background: url("assets/star6.png");
 }
 #aboutSection .star.star7{
-  animation-delay: -6s;
+  animation-delay: -2s;
   background: url("assets/star7.png");
 }
 
@@ -1101,7 +1101,7 @@ footer {
 .technology-section {
   min-width: 10px;
   /*width: 100%;*/
-  min-height: 600px;
+  min-height: 100vh;
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -1330,7 +1330,7 @@ footer {
   /*padding-left: 80px;*/
   /*padding-right: 80px;*/
 }
-.exercise-gridHandling > .project01,.project02,.project03{
+.exercise-gridHandling > .project01,.exercise-gridHandling > .project02,.exercise-gridHandling > .project03{
   min-height: 300px;
   margin-bottom: 60px;
   opacity: 32%;
