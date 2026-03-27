@@ -1120,7 +1120,7 @@ footer {
 }
 
 /* HEADING */
-.project-Heading {
+.heading {
   min-width: 300px;
   position: absolute;
   top: 50px;
@@ -1280,7 +1280,7 @@ footer {
 /*  height: 500px;*/
 /*  border: 2px solid red;*/
 /*}*/
-.projectShowcase-section {
+.exercise-section {
   min-width: 10px;
   min-height: 800px;
   background-color: black;
