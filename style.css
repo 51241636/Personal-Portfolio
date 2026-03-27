@@ -923,7 +923,8 @@ footer {
   }
   .projectShowcase-section > .project-gridHandling03{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 25px;
   }
 
 
@@ -1128,24 +1129,23 @@ footer {
 }
 /* GRID */
 .project-gridHandling03 {
+
   display: grid;
   grid-template-columns: repeat(3 , 1fr);
   /*border: 2px solid red;*/
-  gap: 20px;
+  gap: 50px;
   padding-top: 250px;
   overflow: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 /* PROJECT ITEMS */
 .project01,
 .project02,
 .project03 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
   text-align: center;
   border-radius: 20px;
     border: 1px solid rgba(255,255,255,0.2);
@@ -1162,8 +1162,7 @@ footer {
 .project01{
 
   grid-column: 1;
-  display: flex;
-  flex-direction: column;
+
 
   /*gap: 10px;*/
   /*padding-top: 200px;*/
@@ -1172,6 +1171,7 @@ footer {
   color: white;
   font-weight: bolder;
   z-index: 1;
+  padding-bottom: 30px;
   /*border: 2px solid red;*/
 }
 .Used-tech-pos{
@@ -1181,11 +1181,13 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  border: 2px solid red;
+  margin: 0 auto;
+  margin-top: 30px;
+
 }
 .Used-tech-pos > div{
   min-width: 90px;
-  height: 40px;
+  height: 30px;
   padding: 4px;
   color: purple;
   font-weight: bolder;
@@ -1198,6 +1200,7 @@ footer {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(10px);
   box-shadow: 0 0 30px purple;
+
 }
 .source{
   display: flex;
@@ -1214,12 +1217,21 @@ footer {
   color: white;
   text-decoration: none;
   font-size: 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  gap: 10px;
 }
+
+
 .project-video{
   width: 300px;
-  height: 300px;
+  height: 200px;
   border: 12px solid dimgray;
   box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 2em;
+
 }
 .gitHubLink{
   width: 100%;
@@ -1242,6 +1254,7 @@ footer {
   color: white;
   font-weight: bolder;
   z-index: 1;
+  padding-bottom: 30px;
   /*border: 2px solid red;*/
 }
 .project03{
@@ -1254,6 +1267,7 @@ footer {
   color: white;
   font-weight: bolder;
   z-index: 1;
+  padding-bottom: 30px;
   /*border: 2px solid red;*/
 }
 /*.project01-card{*/
