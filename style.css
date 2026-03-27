@@ -212,7 +212,7 @@ header {
 /* ===== MAIN GRID ===== */
  .gridHandling01 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2,1fr);
   /*gap: 25px;*/
   /*min-width: ;*/
    min-height: 10px;
@@ -921,11 +921,13 @@ footer {
     height: 300px;
 
   }
-  .projectShowcase-section > .project-gridHandling03{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-left: 25px;
-  }
+  /*.projectShowcase-section > .project-gridHandling03{*/
+  /*  display: grid;*/
+  /*  grid-template-columns: repeat(3,1fr);*/
+
+
+
+  /*}*/
 
 
 }
@@ -1129,15 +1131,15 @@ footer {
 }
 /* GRID */
 .project-gridHandling03 {
-
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
   /*border: 2px solid red;*/
   gap: 50px;
   padding-top: 250px;
   overflow: auto;
-  padding-left: 80px;
-  padding-right: 80px;
+  justify-content: center;
+  /*padding-left: 80px;*/
+  /*padding-right: 80px;*/
 }
 
 /* PROJECT ITEMS */
@@ -1231,8 +1233,10 @@ footer {
   margin: 0 auto;
   margin-top: 30px;
   border-radius: 2em;
-
+  transition: transform 0.3s ease;
 }
+.project-video:hover{
+  transform: scale(1.10);}
 .gitHubLink{
   width: 100%;
   min-height:50px ;
