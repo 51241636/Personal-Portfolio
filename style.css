@@ -685,10 +685,10 @@ footer {
   #Line03 { font-size: 1.6em; }
   #buttons { margin-top: 40px; }
 }
-@media (max-width:3000px ) and (min-width: 1600px) {
+@media  (min-width: 1600px) {
   #MainDiv01-leftSide{
     margin-left: 100px;
-    font-size: 23px;
+    font-size: 1.2em;
   }
   #hireAvailability{width:350px }
   #qualificationIcon > div:nth-child(3) { width: 150px; left: 220px; top: 0; }
