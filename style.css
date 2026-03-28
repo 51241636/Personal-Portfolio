@@ -227,23 +227,23 @@ header {
 /* ===== HIRE AVAILABILITY BADGE ===== */
 
 /* FIX: added display:flex + centering so text is vertically centered */
-#hireAvailability {
-  width: 300px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-radius: 4em;
-  color: white;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.15);
-  margin-left: 30px;
+/*#hireAvailability {*/
+/*  width: 300px;*/
+/*  height: 45px;*/
+/*  display: flex;*/
+/*  align-items: center;*/
+/*  justify-content: center;*/
+/*  gap: 8px;*/
+/*  border-radius: 4em;*/
+/*  color: white;*/
+/*  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
+/*  backdrop-filter: blur(5px);*/
+/*  -webkit-backdrop-filter: blur(5px);*/
+/*  border: 1px solid rgba(255, 255, 255, 0.5);*/
+/*  background: rgba(255, 255, 255, 0.15);*/
+/*  margin-left: 30px;*/
 
-}
+/*}*/
 
 .fa-circle-dot {
   color: #51B55D;
@@ -257,7 +257,7 @@ header {
   /*min-width: ;*/
    min-height: 10px;
   min-width: 10px;
-  padding-top: 55px;
+  padding-top: 65px;
   box-sizing: border-box;
   margin: 0 auto;
 
@@ -324,10 +324,17 @@ header {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 30px;
 }
+#Line03 > span{
+  background: linear-gradient(to right, #8B5CF6, #513690);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 #description {
   margin-left: 30px;
   color: #847575;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 }
 
 /* ===== QUALIFICATION ICONS ===== */
@@ -1070,14 +1077,16 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  line-height: 10px;
+  font-style: normal;
 
 
 
 }
 .about-heading > h2{
-  animation: textAppear both;
-  animation-timeline: view();
-  animation-range:entry 20% cover 100vh
+  font-size: 4.5em;
+  font-weight: bolder;
 }
 @keyframes textAppear {
   from {
@@ -1090,11 +1099,8 @@ footer {
   }
 }
 
-.about-heading >p{
-
-}
 #aboutSection > .gridHandling01{
-  margin-top: 100px;
+  margin-top: 150px;
   padding-right: 20px;
   padding-left: 20px;
 
@@ -1103,15 +1109,20 @@ footer {
   text-align: center;
    max-width: 800px;
   color: white;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
   font-size: 23px;
   padding: 2px;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 4rem;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgb(126, 4, 227);
+  box-shadow: 0 0 7px #7e04e3;
+}
+.about-content > p{
+  line-height: 30px;
 }
 .gridHandling02{
   position: relative;
@@ -1138,6 +1149,10 @@ footer {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.gridHandling02 > a:hover{
+  border: 2px solid #7e04e3;
+  box-shadow: 0 0 7px #7e04e3;
 }
 
  .gridHandling03 {
