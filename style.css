@@ -46,6 +46,7 @@
   overflow: hidden;
   z-index: 0;
 
+
 }
 #backGroundColor01,
 #backGroundColor02,
@@ -241,6 +242,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: rgba(255, 255, 255, 0.15);
   margin-left: 30px;
+
 }
 
 .fa-circle-dot {
@@ -294,11 +296,13 @@ header {
   font-size: 2em;
   margin-left: 30px;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
 }
 #Line02 {
   color: white;
-  font-size: 3em;
+  font-size: 3.7em;
   margin-left: 30px;
+  line-height: 90px;
 }
 #Line02 > span {
   background: linear-gradient(to right, #ffffff, #8A2BE2);
@@ -417,7 +421,7 @@ header {
 
 /* ===== SOCIAL MEDIA ICONS ===== */
 #socialMediaIcon {
-  width: 350px;
+  max-width: 350px;
   margin-left: 35px;
   height: 50px;
   margin-top: 30px;
@@ -426,6 +430,7 @@ header {
   justify-content: space-between;
   font-size: 34px;
   z-index: 10000;
+  opacity: 50%;
 }
 #socialMediaIcon > a {
   border: 2px solid white;
@@ -785,7 +790,19 @@ footer {
     justify-content: center;
     align-items: center;
 
+
   }
+  #MainDiv01-leftSide > #Line01{
+    font-size: 1.8em;
+    font-weight: bolder;
+  }
+  #MainDiv01-leftSide > #Line02 >span{
+    font-size: 1.8em;
+  }
+  #MainDiv01-leftSide > #Line03{
+    font-size: 1.7em;
+  }
+
 
   #MainDiv01-rightSide {
     grid-column: 1;
@@ -793,6 +810,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 
 
@@ -855,7 +873,11 @@ footer {
   #buttons{
     display: flex;
     /*justify-content:space-between;*/
-    gap: 50px;
+    gap: 45px;
+  }
+  #socialMediaIcon{
+    min-width: 310px;
+
   }
   .square01{
     position: absolute;
@@ -1079,7 +1101,7 @@ footer {
 }
 .about-content{
   text-align: center;
-
+   max-width: 800px;
   color: white;
   font-size: 23px;
   padding: 2px;
@@ -1095,7 +1117,7 @@ footer {
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  min-width: 5px;
+  min-width: 10px;
   min-height: 90px;
   margin-top: 20px;
 
