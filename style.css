@@ -1454,7 +1454,33 @@ footer {
   transform: scale(1.10);
   transition: 0.5s;
 }
-
+.exercise-section > .exercise-gridHandling > .project01{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+.exercise-section.show > .exercise-gridHandling > .project01{
+  translate: 0;
+  opacity: 1;
+}
+.exercise-section > .exercise-gridHandling > .project02{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+.exercise-section.show > .exercise-gridHandling > .project02{
+  translate: 0;
+  opacity: 1;
+}
+.exercise-section > .exercise-gridHandling > .project03{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+.exercise-section.show > .exercise-gridHandling > .project03{
+  translate: 0;
+  opacity: 1;
+}
 .exercise-gridHandling > .project01{
   background: url("assets/assignment02.png");
   background-size: cover;
