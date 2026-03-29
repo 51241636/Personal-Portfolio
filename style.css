@@ -1629,6 +1629,16 @@ footer {
   align-content: center;
   text-align: center;
 }
+@keyframes beatAnimation {
+  0%{
+    transform: scale(1);
+  }50%{
+  transform: scale(1.05);
+     }100%{
+             transform: scale(1);
+           }
+
+}
 
  .project-content >  .codeLink{
   width: 160px;
@@ -1645,23 +1655,6 @@ footer {
   opacity: 1%;
 }
 
-.tryExersice{
-  width: 80px;
-  height: 30px;
-
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  margin-left: 10px;
-  color: grey;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 2em;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(7, 7, 7, 0.4);
-  backdrop-filter: blur(10px);
-}
 .codeLink > a{
   text-decoration: none;
   width: 60px;
@@ -1676,23 +1669,57 @@ footer {
   border: 1px solid rgba(255,255,255,0.2);
   background: rgba(7, 7, 7, 0.4);
   backdrop-filter: blur(10px);
-}
+  color: dimgray;
 
+}
+.codeLink > a:hover{
+  box-shadow: 0 0 10px white;
+  transition: 0.5s ease;
+  transform: scale(1.10);
+}
+.exersiceTopic{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+
+}
+.exersiceDes{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 650;
+  color: dimgray;
+  font-size: 20px;
+
+}
+.exersiceNum{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: mediumpurple;
+
+}
+.exercise-gridHandling  > .project01{
+  animation: beatAnimation 5s infinite linear;
+}
+.exercise-gridHandling  > .project02{
+  animation: beatAnimation 5s infinite linear;
+}
+.exercise-gridHandling  > .project03{
+  animation: beatAnimation 5s infinite linear;
+}
 .exercise-gridHandling  > .project01:hover{
   .project-content{
+
     opacity: 100%;
     transition: 1.2s;
   }
-
-    transform: scale(1.10);
-  transition: 0.5s;
+  animation: none;
+    transform: scale(1.15);
+  transition: 1s;
 }
 .exercise-gridHandling > .project02:hover{
   .project-content{
     opacity: 100%;
     transition: 1.2s;
   }
-
+  animation: none;
   transform: scale(1.10);
   transition: 0.5s;
 }
@@ -1701,7 +1728,7 @@ footer {
     opacity: 100%;
     transition: 1.2s;
   }
-
+  animation: none;
   transform: scale(1.10);
   transition: 0.5s;
 }
