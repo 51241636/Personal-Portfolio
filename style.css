@@ -784,7 +784,7 @@ footer {
 
 
   }
-  #aboutSection > .gridHandling02{
+  #aboutSection > .about-content >  .gridHandling02{
   grid-template-columns: 1fr ;
 
 }
@@ -1028,6 +1028,7 @@ footer {
   position: relative;
   overflow: hidden;
   z-index: 0;
+  padding-bottom: 50px;
 }
 #aboutSection .star{
   position: absolute;
@@ -1080,6 +1081,7 @@ footer {
   font-family: "Oswald", sans-serif;
   line-height: 10px;
   font-style: normal;
+  padding-top: 15px;
 
 
 
@@ -1105,14 +1107,14 @@ footer {
   padding-left: 20px;
 
 }
-.about-content{
+.about-content > .aboutDescription {
   text-align: center;
    max-width: 800px;
   color: white;
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-size: 23px;
-  padding: 2px;
+  font-size: 18px;
+  /*padding: 2px;*/
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 4rem;
@@ -1120,39 +1122,71 @@ footer {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgb(126, 4, 227);
   box-shadow: 0 0 7px #7e04e3;
+  padding: 20px;
 }
-.about-content > p{
+.about-content > .aboutDescription > p{
   line-height: 30px;
+  color: grey;
 }
 .gridHandling02{
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  min-width: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 800px;
   min-height: 90px;
-  margin-top: 20px;
+  margin-top: 30px;
 
 }
-.gridHandling02 > a{
+.gridHandling02 > div{
   min-width: 5px;
-  height: 140px;
+  min-height: 140px;
   margin-right: 10px;
   margin-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom:20px;
   border-radius: 3rem;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.10);
+  line-height: 5px;
+  background: rgba(255, 255, 255, 0.01);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+
 }
-.gridHandling02 > a:hover{
+.card01 > h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 3em;
+}
+.card01 > h5{
+  color: #8e8b8b;
+  font-size: 17px;
+}
+.card01 > #medal {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35%;
+  color: #7e04e3;
+
+  background: rgb(126, 4, 227,0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+
+}
+.gridHandling02 > div:hover{
   border: 2px solid #7e04e3;
   box-shadow: 0 0 7px #7e04e3;
+  transition: 1s ease;
 }
 
  .gridHandling03 {
