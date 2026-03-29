@@ -203,7 +203,9 @@ header {
 
 }
 header > #navigationName > a:hover{
-  color: #5b1ea5;
+  color: dimgrey;
+  transition: 0.5s ;
+  text-shadow: 2px 2px 5px white;
 }
 
 
