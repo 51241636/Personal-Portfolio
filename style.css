@@ -1612,7 +1612,7 @@ footer {
   backdrop-filter: blur(10px);
 }
 
-.project01:hover{
+.exercise-gridHandling  > .project01:hover{
   .project-content{
     opacity: 100%;
     transition: 1.2s;
@@ -1621,7 +1621,7 @@ footer {
     transform: scale(1.10);
   transition: 0.5s;
 }
-.project02:hover{
+.exercise-gridHandling > .project02:hover{
   .project-content{
     opacity: 100%;
     transition: 1.2s;
@@ -1630,7 +1630,7 @@ footer {
   transform: scale(1.10);
   transition: 0.5s;
 }
-.project03:hover{
+.exercise-gridHandling >.project03:hover{
   .project-content{
     opacity: 100%;
     transition: 1.2s;
