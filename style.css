@@ -986,6 +986,9 @@ footer {
     75%  { top: 385px; }
     100% { top: 380px; }
   }
+  .heading-Name{
+    font-size: 40px !important;
+  }
 
   #statusBatch { left: 220px; }
 
