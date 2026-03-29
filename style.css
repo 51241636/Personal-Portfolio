@@ -987,7 +987,7 @@ footer {
     100% { top: 380px; }
   }
   .heading-Name{
-    font-size: 40px !important;
+    font-size: 35px !important;
   }
 
   #statusBatch { left: 220px; }
@@ -1368,7 +1368,7 @@ footer {
 
 /* HEADING */
 .heading {
-  min-width: 400px;
+  min-width: 300px;
   position: absolute;
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -1508,7 +1508,7 @@ footer {
   gap: 10px;
 }
 .gitHubLink > .source{
-  width: 400px;
+  width: 350px;
   height: 60px;
   font-weight: 600;
 
@@ -1636,7 +1636,7 @@ footer {
   0%{
     transform: scale(1);
   }50%{
-  transform: scale(1.05);
+  transform: scale(1.01);
      }100%{
              transform: scale(1);
            }
