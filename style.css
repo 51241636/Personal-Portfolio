@@ -1157,14 +1157,18 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.5);
 
 }
-.card01 > h1{
+.count{
   color: white;
   font-weight: bolder;
   font-size: 3em;
+  font-family: "Bungee", sans-serif;
 }
-.card01 > h5{
+.tag{
   color: #8e8b8b;
-  font-size: 17px;
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  font-weight: bolder;
+
 }
 .card01 > #medal {
   width: 40px;
@@ -1175,7 +1179,58 @@ footer {
   border-radius: 35%;
   color: #7e04e3;
 
-  background: rgb(126, 4, 227,0.2);
+  background: rgb(126, 4, 227,0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+
+}
+.card02 > #medal02 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35%;
+  color: #7e04e3;
+  background: rgb(126, 4, 227,0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+
+}
+.card03 > #medal03 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35%;
+  color: #7e04e3;
+
+
+  background: rgb(126, 4, 227,0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+
+}
+.card04 > #medal04 {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35%;
+  color: #7e04e3;
+
+  background: rgb(126, 4, 227,0.15);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
