@@ -1095,13 +1095,13 @@ footer {
 
 
 }
-.about-heading > h2{
+.heading-Name {
   font-size: 4.5em;
   font-weight: bolder;
   width: max-content;
   margin-top: 20px;
 }
-.about-heading > h2::after{
+.heading-Name::after{
   content: '';
   background:#a855f7 ;
   height: 4px;
@@ -1295,23 +1295,39 @@ footer {
 
 }
 .technology-section > .techSection-header{
-  min-width: 10px;
+  min-width: 400px;
   position: absolute;
-  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  background: linear-gradient(to right, #d1b3ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
-  min-height: 100px;
+  line-height: 10px;
+  font-style: normal;
+  padding-top: 15px;
+
+  /*min-height: 100px;*/
+}
+.technology-section > .techSection-header > h1{
+  font-size:3em;
 }
 .technology-sphere{
   position: absolute;
-  top: 0;
+  top: 200px;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 400px;
+  width: 450px;
   height: 400px;
   opacity: 20%;
   border-radius: 100%;
