@@ -694,7 +694,7 @@ footer {
   #Line03 { font-size: 1.6em; }
   #buttons { margin-top: 40px; }
 }
-@media  (min-width: 1600px) {
+@media  (min-width: 1380px) {
   #MainDiv01-leftSide{
     margin-left: 100px;
     font-size: 1.2em;
