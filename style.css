@@ -1356,13 +1356,29 @@ footer {
 
 /* HEADING */
 .heading {
-  min-width: 300px;
+  min-width: 400px;
   position: absolute;
-  top: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  background: linear-gradient(to right, #d1b3ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  line-height: 10px;
+  font-style: normal;
+  padding-top: 15px;
+}
+.heading > .heading-Name::after{
+  position: absolute;
+  left: 120px;
 }
 /* GRID */
 .project-gridHandling03 {
@@ -1375,6 +1391,19 @@ footer {
   justify-content: center;
   padding-left: 50px;
   padding-right: 50px;
+}
+.ProjectName {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  color: #ffffff;
+}
+.ProjectDescription{
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #9ca3af; /* soft gray */
+  line-height: 1.6;
 }
 
 /* PROJECT ITEMS */
@@ -1393,7 +1422,8 @@ footer {
 .project01:hover,
 .project02:hover,
 .project03:hover{
-  box-shadow: 0 0 30px purple;
+  transition: 0.2s ease-in;
+  box-shadow: 0 0 10px white;
 }
 
 
@@ -1422,22 +1452,27 @@ footer {
   margin: 0 auto;
   margin-top: 30px;
 
+
+
 }
 .Used-tech-pos > div{
   min-width: 90px;
   height: 30px;
   padding: 4px;
-  color: purple;
+  color: #8009f4;
   font-weight: bolder;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
   border-radius: 20px;
-    border: 1px solid rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.05);
+
+    border: 0.5px solid rgb(142, 139, 139);
+    background: rgb(126, 4, 227,0.15);
     backdrop-filter: blur(10px);
-  box-shadow: 0 0 30px purple;
+  /*box-shadow: 0 0 30px #6702cc;*/
 
 }
 .source{
@@ -1448,16 +1483,36 @@ footer {
   width: 300px;
   height: 60px;
   border-radius: 2em;
+  font-family: 'Inter', sans-serif;
   border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.05);
+  background: rgba(255,255,255,0.01);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px white;
-  color: white;
+  /*box-shadow: 0 0 10px white;*/
+  color: #9a9696;
   text-decoration: none;
   font-size: 20px;
   margin: 0 auto;
   margin-top: 30px;
   gap: 10px;
+}
+.gitHubLink > .source{
+  width: 400px;
+  height: 60px;
+  font-weight: 600;
+
+
+}
+.source:hover{
+  box-shadow: 0 0 10px white;
+  border: 1px solid white;
+  background: rgba(255,255,255,0.1);
+  transition: 0.2s ease-in;
+}
+.gitHubLink > .source:hover{
+  box-shadow: 0 0 15px #7307e1;
+  border: 1px solid #7307e1;
+  background: rgb(110, 0, 253,0.15);
+  transition: 0.2s ease-in;
 }
 
 
@@ -1492,7 +1547,9 @@ footer {
   background-position: center;
 }
 .project-video:hover{
+  transition: 0.5s ease-in-out;
   transform: scale(1.10);}
+
 .gitHubLink{
   width: 100%;
   min-height:50px ;
