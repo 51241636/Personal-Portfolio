@@ -355,8 +355,10 @@ header > #navigationName > a:hover{
   width: 100%;
   max-width: 400px;
   height: 80px;
-  color: white;
+  color: #979292;
+  font-family: 'Inter', sans-serif;
   margin-left: 30px;
+  font-weight: 800;
 }
 #qualificationIcon > div {
   position: absolute;
@@ -387,6 +389,7 @@ header > #navigationName > a:hover{
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  font-family: 'Inter', sans-serif;
   /*z-index: 1;*/
 }
 #buttons > button {
@@ -396,7 +399,7 @@ header > #navigationName > a:hover{
   background-color: #7e04e3;
   color: white;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 1.5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1143,6 +1146,10 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
 
+}
+.extraColor{
+  color: #602d91;
+  font-weight: 800;
 }
 .about-content > .aboutDescription {
   text-align: center;
