@@ -9,7 +9,7 @@
    margin-bottom:30px;
    width: 60px;
   height: 60px;
-   z-index: 500;
+   z-index: 1;
    background-color: #25D366 ;
   /*animation: whatsappIconAni 1s infinite;*/
 }
@@ -370,7 +370,7 @@ header {
 
 /* FIX: margin-top reduced from 100px to 60px — less wasted space */
 #buttons {
-  width: 330px;
+  width: 470px;
   height: 50px;
   margin-left: 30px;
   margin-top: 40px;
@@ -379,10 +379,10 @@ header {
   /*z-index: 1;*/
 }
 #buttons > button {
-  width: 150px;
+  width: 230px;
   height: 50px;
   border-radius: 2em;
-  background-color: #7300FF;
+  background-color: #7e04e3;
   color: white;
   font-weight: bolder;
   font-size: 20px;
@@ -411,15 +411,15 @@ header {
   content: "";
   position: absolute;
   height: 53px;
-  width: 153px;
+  width: 230px;
   background: conic-gradient(from var(--deg) at center,
-  #8B5CF6, #8B5CF6, purple, black);
+  #6702cc, #6702cc, #6702cc, black);
   border-radius: 2em;
   z-index: -1;
   animation: autoRotate 2s linear infinite;
 }
 #buttons > button::after {
-  filter: blur(20px);
+  filter: blur(5px);
 }
 
 @keyframes autoRotate {
@@ -791,11 +791,12 @@ footer {
 
   #MainDiv01-leftSide {
     grid-column: 1;
-    padding: 10px 0;
+    padding: 5px 0;
     margin-top: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 
   }
@@ -936,12 +937,12 @@ footer {
   #qualificationIcon { margin-left: 16px; }
 
   #buttons {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     margin-left: 16px;
-    width: 300px;
+    width: 350px;
   }
   #buttons > button {
-    width: 200px;
+    width: 300px;
     font-size: 16px;
   }
 
@@ -1463,12 +1464,32 @@ footer {
 .project-video{
   width: 300px;
   height: 200px;
-  border: 12px solid dimgray;
+  border: 10px solid dimgray;
   box-sizing: border-box;
   margin: 0 auto;
   margin-top: 30px;
   border-radius: 2em;
   transition: transform 0.3s ease;
+
+
+}
+.project01 > .project-video{
+  background: url("assets/posgif.gif");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.project02 > .project-video{
+  background: url("assets/portfoli.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+}
+.project03 > .project-video{
+  background: url("assets/palletSystem.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
 }
 .project-video:hover{
   transform: scale(1.10);}
