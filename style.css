@@ -3,6 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
  .color-pulse{
    position: fixed;
    right: 0;
@@ -441,7 +442,7 @@ header > #navigationName > a:hover{
 }
 
 /* ===== SOCIAL MEDIA ICONS ===== */
-#socialMediaIcon {
+.socialMediaIcon {
   max-width: 350px;
   margin-left: 35px;
   height: 50px;
@@ -453,7 +454,7 @@ header > #navigationName > a:hover{
   z-index: 10000;
   opacity: 50%;
 }
-#socialMediaIcon > a {
+.socialMediaIcon > a {
   border: 2px solid white;
   border-radius: 100%;
   display: flex;
@@ -465,11 +466,11 @@ header > #navigationName > a:hover{
   width: 50px;
   height: 50px;
 }
-#socialMediaIcon > a:nth-child(1):hover { color: lawngreen; border-color: lawngreen; box-shadow: 0 0 30px lawngreen;  }
-#socialMediaIcon > a:nth-child(2):hover { color: blue;      border-color: blue;      box-shadow: 0 0 30px blue; }
-#socialMediaIcon > a:nth-child(3):hover { color: white;     border-color: white;     box-shadow: 0 0 30px white; }
-#socialMediaIcon > a:nth-child(4):hover { color: red;       border-color: red;       box-shadow: 0 0 30px red; }
-#socialMediaIcon > a:nth-child(5):hover { color: #ee2a7b;   border-color: #ee2a7b;   box-shadow: 0 0 30px #ee2a7b; }
+.socialMediaIcon > a:nth-child(1):hover { color: lawngreen; border-color: lawngreen; box-shadow: 0 0 30px lawngreen;  }
+.socialMediaIcon > a:nth-child(2):hover { color: blue;      border-color: blue;      box-shadow: 0 0 30px blue; }
+.socialMediaIcon > a:nth-child(3):hover { color: white;     border-color: white;     box-shadow: 0 0 30px white; }
+.socialMediaIcon > a:nth-child(4):hover { color: red;       border-color: red;       box-shadow: 0 0 30px red; }
+.socialMediaIcon > a:nth-child(5):hover { color: #ee2a7b;   border-color: #ee2a7b;   box-shadow: 0 0 30px #ee2a7b; }
 
 /* ===== RIGHT SIDE SQUARES (orbiting animation) ===== */
 .square01 {
@@ -664,7 +665,7 @@ header > #navigationName > a:hover{
 footer {
   position: relative;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   background: black;
   color: white;
   text-align: center;
@@ -674,6 +675,7 @@ footer {
   border-radius: 15px 15px 0 0;
   z-index: 1;
 }
+
 
 /* ===== FONT ===== */
 .rubik-wet-paint-regular {
@@ -1006,6 +1008,16 @@ footer {
     height: 300px;
 
   }
+  footer > .gridHandling03{
+    grid-template-columns: 1fr;
+    font-size: 1em;
+  }
+  footer > .gridHandling03 > .footerColumn02{
+    display: none;
+  }
+  footer > .gridHandling03 > .footerColumn03{
+    display: none;
+  }
   /*.projectShowcase-section > .project-gridHandling03{*/
   /*  display: grid;*/
   /*  grid-template-columns: repeat(3,1fr);*/
@@ -1289,9 +1301,9 @@ footer {
 }
 
  .gridHandling03 {
-  position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   gap: 25px;
   /*width: 100%;*/
   min-width: 10px;
@@ -1301,10 +1313,75 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
 }
-.gridHandling03 > div:first-child{
-
+.footerColumn01 {
+  max-width: 350px;
+  text-align: left;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom:30px ;
+}
+.gridHandling03 > .footerColumn01 > .socialMediaIcon{
+  /*position: absolute;*/
+  margin-left: 0;
   /*position: relative;*/
   /*top: 0;*/
+}
+.footerColumn01 > h1{
+  background: linear-gradient(to right, #5805af, #fafafa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+}
+.footerColumn01 > p {
+  font-weight: 700;
+  color: dimgray;
+  font-size: 1.2em;
+}
+.footerColumn02 {
+  max-width: 350px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+.footerColumn03{
+  max-width: 350px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+.footerColumn02 > h2{
+  font-size: 2em;
+}
+.quickLinks{
+  /*position: absolute;*/
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  line-height: 35px;
+
+
+}
+.quickLinks > a{
+  text-decoration: none;
+  color: #8e8b8b;
+  font-weight: 800;
+}
+.footerBottom{
+  border-top:2px solid white ;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .technology-section {
   min-width: 10px;
@@ -1314,6 +1391,7 @@ footer {
   position: relative;
   overflow: hidden;
   z-index: 0;
+
 
 }
 .technology-section > .techSection-header{
