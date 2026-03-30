@@ -1895,9 +1895,9 @@ footer {
 
 }
 .detailsCard > div:first-child{
-  font-size: 2.5em;
-  width: 50px;
-  min-height: 50px;
+  font-size: 2em;
+  width: 40px;
+  min-height: 40px;
   border: 1px solid rgba(255,255,255,0.4);
   background: rgb(5, 5, 5,0.5);
   backdrop-filter: blur(10px);
