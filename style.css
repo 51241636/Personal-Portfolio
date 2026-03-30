@@ -972,13 +972,18 @@ footer {
 
 
   }
-  .fill-side {
-    width: 100%;
-    padding: 0 10px;
-  }
+  #contact-Section > .contact-gridHandling > .fill-side{
+    width: 330px;
+    min-height: 60px;
 
-  .fill-side-textBox {
-    width: 100%;
+
+  }
+  #contact-Section > .contact-gridHandling > .fill-side >.fill-side-textBox{
+    width: 330px;
+    min-height: 40px;
+
+
+
   }
   footer > .gridHandling03{
     grid-template-columns: 1fr;
@@ -1962,7 +1967,6 @@ footer {
   gap: 40px;
   padding: 20px;
   padding-top: 50px;
-
 }
 .contact-form > .text{
   height: 40px;
