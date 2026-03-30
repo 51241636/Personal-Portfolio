@@ -1410,8 +1410,25 @@ footer {
   border-radius: 100%;
   border: 2px solid white;
   /*transform: translateX(360px);*/
-  animation:sphereAnimate 15s infinite linear ;
+  animation:sphereAnimate 30s infinite linear ;
 
+}
+.technology-sphere:hover{
+  animation: paused;
+}
+.technology-sphere > div{
+  position: absolute;
+  width:100px;
+  height: 20px;
+  top: -30px;
+  border-radius: 3em;
+  background-color: red;
+  transform: skewX(-30deg);
+}
+.technology-sphere > div:hover{
+
+  /*transform: scale(1.5);*/
+  /*animation: paused;*/
 }
 @keyframes sphereAnimate {
   0%{
