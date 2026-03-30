@@ -1,4 +1,3 @@
-/* ===== MAIN SECTION ===== */
 html {
   scroll-behavior: smooth;
 }
@@ -58,53 +57,9 @@ html {
 #backGroundColor04 {
   z-index: -1;
 }
-/*#backGroundColor01{*/
-/*  position: absolute;*/
-/*  width: 418px;*/
-/*  height: 384px;*/
-/*  background-color:#470981 ;*/
-/*  opacity: 0%;*/
-/*  border-radius: 100%;*/
-/*  filter: blur(100px) brightness(0);*/
 
-/*}*/
-/*#backGroundColor02{*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  right: 0;*/
-/*  width: 418px;*/
-/*  height: 384px;*/
-/*  background-color:#004D5D ;*/
-/*  opacity: 60%;*/
-/*  border-radius: 100%;*/
-/*  filter: blur(100px);*/
-/*  z-index: -1;*/
-/*}*/
-/*#backGroundColor03{*/
-/*  position: absolute;*/
-/*  bottom: 0;*/
-/*  left: 0;*/
-/*  width: 418px;*/
-/*  height: 384px;*/
-/*  background-color:#004D5D ;*/
-/*  opacity: 72%;*/
-/*  border-radius: 100%;*/
-/*  filter: blur(72px);*/
-/*  z-index: 1000;*/
-/*}*/
-/*#backGroundColor04{*/
-/*  position: absolute;*/
-/*  bottom: 0;*/
-/*  right: 0;*/
-/*  width: 418px;*/
-/*  height: 384px;*/
-/*  background-color:#470981 ;*/
-/*  opacity: 72%;*/
-/*  border-radius: 100%;*/
-/*  filter: blur(72px);*/
-/*}*/
 
-/* ===== FLOATING BUBBLES ===== */
+
 .wrapper span {
   position: fixed;
   bottom: -180px;
@@ -135,9 +90,7 @@ html {
   100% { transform: translateY(-800px) rotate(360deg); opacity: 0; }
 }
 
-/* ===== BACKGROUND BLOBS ===== */
 
-/* FIX: was missing position:absolute — caused layout shift */
 .backGroundColor01 {
   position: absolute;
   top: 0; left: 0;
@@ -183,7 +136,7 @@ html {
   z-index: -1;
 }
 
-/* ===== HEADER ===== */
+/* header  */
 header {
   position: absolute;
   top: 0;
@@ -236,9 +189,8 @@ header > #navigationName > a:hover{
   font-weight: bolder;
 }
 
-/* ===== HIRE AVAILABILITY BADGE ===== */
 
-/* FIX: added display:flex + centering so text is vertically centered */
+
 /*#hireAvailability {*/
 /*  width: 300px;*/
 /*  height: 45px;*/
@@ -260,8 +212,8 @@ header > #navigationName > a:hover{
 .fa-circle-dot {
   color: #51B55D;
 }
+ /*Main section grid*/
 
-/* ===== MAIN GRID ===== */
  .gridHandling01 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -275,7 +227,6 @@ header > #navigationName > a:hover{
 
 }
 
-/* ===== LEFT SIDE ===== */
 #MainDiv01-leftSide {
   min-width: 10px;
   min-height: 10px;
@@ -290,7 +241,6 @@ header > #navigationName > a:hover{
 
 }
 
-/* ===== RIGHT SIDE ===== */
 #MainDiv01-rightSide {
   /*grid-column: ;*/
   position: relative;
@@ -302,7 +252,6 @@ header > #navigationName > a:hover{
   text-align: center;
 }
 
-/* ===== TEXT LINES ===== */
 #Line01 {
   color: white;
   font-size: 2em;
@@ -322,7 +271,6 @@ header > #navigationName > a:hover{
   -webkit-text-fill-color: transparent;
 }
 
-/* FIX: gradient now targets .name-gradient class (applied to "Sepala" in HTML) */
 .name-gradient {
   background: linear-gradient(to right, #8B5CF6, #513690);
   -webkit-text-fill-color: transparent;
@@ -348,8 +296,6 @@ header > #navigationName > a:hover{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
-
-/* ===== QUALIFICATION ICONS ===== */
 #qualificationIcon {
   position: relative;
   margin-top: 20px;
@@ -380,9 +326,6 @@ header > #navigationName > a:hover{
 #qualificationIcon > div:nth-child(4) { width: 90px;  left: 0;     top: 50px; }
 #qualificationIcon > div:nth-child(5) { width: 90px;  left: 110px; top: 50px; }
 
-/* ===== BUTTONS ===== */
-
-/* FIX: margin-top reduced from 100px to 60px — less wasted space */
 #buttons {
   width: 470px;
   height: 50px;
@@ -441,7 +384,6 @@ header > #navigationName > a:hover{
   to { --deg: 360deg; }
 }
 
-/* ===== SOCIAL MEDIA ICONS ===== */
 .socialMediaIcon {
   max-width: 350px;
   margin-left: 35px;
@@ -472,7 +414,7 @@ header > #navigationName > a:hover{
 .socialMediaIcon > a:nth-child(4):hover { color: red;       border-color: red;       box-shadow: 0 0 30px red; }
 .socialMediaIcon > a:nth-child(5):hover { color: #ee2a7b;   border-color: #ee2a7b;   box-shadow: 0 0 30px #ee2a7b; }
 
-/* ===== RIGHT SIDE SQUARES (orbiting animation) ===== */
+
 .square01 {
   position: absolute;
   top: 0;
@@ -510,7 +452,7 @@ header > #navigationName > a:hover{
   animation: scrolling01 40s infinite linear;
 }
 
-/* FIX: square04 was in HTML but had no CSS rule */
+
 .square04 {
   position: absolute;
   top: 0;
@@ -538,7 +480,7 @@ header > #navigationName > a:hover{
 /*  border: 2px solid red;*/
 /*}*/
 
-/* ===== FLOATING BADGES ===== */
+
 #experienceBatch {
   position: absolute;
   top: 0;
@@ -590,7 +532,7 @@ header > #navigationName > a:hover{
   width: 100px;
   height: 45px;
   top: 400px;
-  /*animation: breathingBadgeStatus 2s infinite linear;*/
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -619,7 +561,7 @@ header > #navigationName > a:hover{
   100% { top: 500px; }
 }
 
-/* ===== LANGUAGE SCROLLING BAR ===== */
+
 .languageScrolling {
   width: 100%;
   height: 60px;
@@ -633,7 +575,7 @@ header > #navigationName > a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* FIX: animate each group; two groups side-by-side create seamless loop */
+
   animation: marquee 20s linear infinite;
   flex-shrink: 0;
 }
@@ -655,13 +597,13 @@ header > #navigationName > a:hover{
   flex: 0 0 auto;
 }
 
-/* FIX: correct infinite marquee — translate -50% moves exactly one full group width */
+
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-100%); }
 }
 
-/* ===== FOOTER ===== */
+
 footer {
   position: relative;
   width: 100%;
@@ -677,18 +619,14 @@ footer {
 }
 
 
-/* ===== FONT ===== */
+
 .rubik-wet-paint-regular {
   font-family: "Rubik Wet Paint", system-ui;
   font-weight: 400;
   font-style: normal;
 }
 
-/* ===================================================
-   RESPONSIVE BREAKPOINTS
-   =================================================== */
 
-/* ---- Tablet: 769px – 1024px ---- */
 @media (max-width: 1024px) {
   #MainSection > .gridHandling01 {
     max-width: 100%;
@@ -701,7 +639,7 @@ footer {
   #Line03 { font-size: 1.6em; }
   #buttons { margin-top: 40px; }
 }
-@media  (min-width: 1380px) {
+@media all and  (min-width: 1380px) {
   #MainDiv01-leftSide{
     margin-left: 100px;
     font-size: 1.2em;
@@ -745,7 +683,7 @@ footer {
     animation: scrolling01 40s infinite linear;
   }
 
-  /* FIX: square04 was in HTML but had no CSS rule */
+
   .square04 {
     position: absolute;
     top: 0;
@@ -759,7 +697,7 @@ footer {
     animation: scrolling02 60s infinite linear;
   }
 }
-/* ---- Mobile: ≤ 768px ---- */
+/*phone resposive*/
 @media (max-width: 768px) {
   #MainSection {
     min-height: 100vh;
@@ -1029,7 +967,7 @@ footer {
 
 }
 
-/* ---- Very small phones: ≤ 480px ---- */
+
 @media (max-width: 480px) {
   #Line01 { font-size: 1.1em; }
   #Line02 { font-size: 1.5em; }
