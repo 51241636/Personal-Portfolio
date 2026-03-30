@@ -954,7 +954,6 @@ footer {
     margin-bottom: 25px;
     max-width:330px ;
     height: 60px;
-    border: 2px solid green;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -964,6 +963,14 @@ footer {
 
 
 
+  }
+  .fill-side {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .fill-side-textBox {
+    width: 100%;
   }
   footer > .gridHandling03{
     grid-template-columns: 1fr;
@@ -1917,13 +1924,16 @@ footer {
   font-weight: 800;
 }
 .fill-side{
+  width: 100%;
   max-width: 550px;
   min-height: 60px;
+  border: 2px solid red;
 
 }
 .fill-side-textBox{
-  width: 500px;
-  max-height: 500px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   border: 1px solid rgba(255,255,255,0.4);
   background: rgb(5, 5, 5,0.5);
   backdrop-filter: blur(10px);
