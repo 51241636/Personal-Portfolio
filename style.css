@@ -1859,12 +1859,12 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
+  color: white;
 }
 .detail-side{
   justify-items: center;
   max-width: 100vw;
   min-height: 60px;
-  border: 2px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1878,11 +1878,16 @@ footer {
   margin-bottom: 25px;
   width:430px ;
   height: 60px;
-  border: 2px solid green;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgb(142, 139, 139,0.2);
+  backdrop-filter: blur(10px);
+  color: dimgray;
+  border-radius: 2em;
 
 
 
@@ -1890,19 +1895,24 @@ footer {
 
 }
 .detailsCard > div:first-child{
-  font-size: 2em;
+  font-size: 2.5em;
   width: 50px;
-  height: 50px;
-  border: 2px solid red;
+  min-height: 50px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgb(5, 5, 5,0.5);
+  backdrop-filter: blur(10px);
+  color: white;
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin-right: 50px;
+  border-radius: 100%;
+  padding: 10px;
 }
 .details{
   /*display: flex;*/
-  font-size: 1.5em;
+  font-size:15px;
 
   color: white;
   font-weight: 800;
