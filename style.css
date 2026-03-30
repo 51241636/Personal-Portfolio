@@ -948,6 +948,14 @@ footer {
   }
   #contact-Section > .contact-gridHandling{
     grid-template-columns: 1fr ;
+    gap: 25px;
+  }
+  #contact-Section > .contact-gridHandling{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
   }
   .detailsCard{
     margin-top: 25px;
@@ -1840,11 +1848,19 @@ footer {
   overflow: hidden;
   z-index: 0;
   padding-bottom: 50px;
+
+
+}
+#contact-Section > .contact-gridHandling{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .contact-gridHandling {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  gap: 25px;
+  gap: 100px;
   /*min-width: ;*/
   min-height: 10px;
   min-width: 10px;
@@ -1924,16 +1940,14 @@ footer {
   font-weight: 800;
 }
 .fill-side{
-  width: 100%;
   max-width: 550px;
   min-height: 60px;
-  border: 2px solid red;
+
 
 }
 .fill-side-textBox{
-  width: 100%;
-  max-width: 500px;
-  height: auto;
+  width: 500px;
+  max-height: 500px;
   border: 1px solid rgba(255,255,255,0.4);
   background: rgb(5, 5, 5,0.5);
   backdrop-filter: blur(10px);
