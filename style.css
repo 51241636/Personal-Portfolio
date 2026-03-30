@@ -946,6 +946,25 @@ footer {
     height: 300px;
 
   }
+  #contact-Section > .contact-gridHandling{
+    grid-template-columns: 1fr ;
+  }
+  .detailsCard{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    max-width:330px ;
+    height: 60px;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+
+
+
+
+  }
   footer > .gridHandling03{
     grid-template-columns: 1fr;
     font-size: 1em;
@@ -1807,23 +1826,93 @@ footer {
   background-position: center;
 }
 #contact-Section{
-  min-width: 10px;
-  min-height: 100px;
+  width: 100%;
+  min-height: 10vh;
   background-color: black;
   position: relative;
+  overflow: hidden;
   z-index: 0;
+  padding-bottom: 50px;
 }
 .contact-gridHandling {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 360px));
-  /*border: 2px solid red;*/
-  gap: 50px;
-  padding-top: 250px;
-  overflow: hidden;
-  justify-content: center;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+  /*min-width: ;*/
+  min-height: 10px;
+  min-width: 10px;
+  padding-top: 150px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: 2px solid red;
+
+
 
   /*padding-left: 80px;*/
   /*padding-right: 80px;*/
+}
+.contact-gridHandling > div{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.detail-side{
+  justify-items: center;
+  max-width: 100vw;
+  min-height: 60px;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+}
+.detailsCard{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width:430px ;
+  height: 60px;
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+
+
+
+}
+.detailsCard > div:first-child{
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 50px;
+}
+.details{
+  /*display: flex;*/
+  font-size: 1.5em;
+
+  color: white;
+  font-weight: 800;
+}
+.fill-side{
+
+  width: 100%;
+  height: 60px;
+  border: 2px solid red;
+
 }
 
 .watermark {
