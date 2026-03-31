@@ -616,7 +616,6 @@ footer {
   justify-content: center;
   display: flex;
   align-items: center;
-  border-radius: 15px 15px 0 0;
   z-index: 1;
 }
 
@@ -1136,6 +1135,19 @@ footer {
 
 
 
+}
+.additional-info{
+  width : 400px;
+  height: 60px;
+  border: 2px solid red;
+  border-radius: 2em;
+  margin: 0 auto;
+  display: flex;
+}
+.additional-info > button{
+  width: 50%;
+  height: 60px;
+  border-radius: 2em;
 }
 .about-heading{
   min-width: 400px;
