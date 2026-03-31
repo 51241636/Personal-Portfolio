@@ -2157,6 +2157,13 @@ footer {
 
 
 }
+
+.footerColumn04{
+  border-top:2px solid white ;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
 .watermark {
   position: absolute;
   top: calc(50vh - 27vh);
