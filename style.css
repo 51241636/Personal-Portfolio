@@ -1139,8 +1139,11 @@ footer {
 .additional-info{
   width : 400px;
   height: 60px;
-  border: 2px solid red;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 2em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   margin: 0 auto;
   display: flex;
 }
@@ -1148,6 +1151,11 @@ footer {
   width: 50%;
   height: 60px;
   border-radius: 2em;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .about-heading{
   min-width: 400px;
