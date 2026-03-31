@@ -1033,6 +1033,17 @@ footer {
     position: absolute;
     left: 70px;
   }
+  footer > .gridHandling03 > .footerColumn01{
+    text-align: center;
+    margin:0 auto ;
+
+  }
+  footer > .gridHandling03 > .footerColumn01  > a{
+    display: block;
+  }
+  footer > .gridHandling03 > .footerColumn04 > .backToTop{
+    display: none;
+  }
   footer > .gridHandling03{
     grid-template-columns: 1fr;
     font-size: 1em;
@@ -1357,6 +1368,9 @@ footer {
   /*position: relative;*/
   /*top: 0;*/
 }
+.footerColumn01  > a{
+  display: none;
+}
 .footerColumn01 > h1{
   background: linear-gradient(to right, #5805af, #fafafa);
   -webkit-background-clip: text;
@@ -1373,8 +1387,8 @@ footer {
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  text-align: center;
+  /*justify-content: start;*/
+  /*text-align: center;*/
 }
 .footerColumn03{
   max-width: 350px;
@@ -1382,22 +1396,33 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  text-align: center;
+}
+.footerColumn03 > h2{
+  font-size: 2em;
 }
 .footerColumn02 > h2{
   font-size: 2em;
 }
+.footerColumn04 > h5{
+  font-size: 1.2em;
+}
 .quickLinks{
+  margin-left: 100px;
   /*position: absolute;*/
 
   display: flex;
-  text-align: center;
+  text-align: start;
   flex-direction: column;
-  line-height: 35px;
+  line-height: 40px;
+  /*position: relative;*/
 
 
 }
 .quickLinks > a{
+  /*position: absolute;*/
+  /*display: flex;*/
+  /*text-align: center;*/
+  /*flex-direction: column;*/
   text-decoration: none;
   color: #8e8b8b;
   font-weight: 800;
@@ -2163,6 +2188,14 @@ footer {
   grid-column: 1/-1;
   display: flex;
   justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+}
+.backToTop{
+  color: rebeccapurple;
+  font-size: 1.5em;
+  margin-top:20px ;
+  text-decoration: none;
+  font-weight: 700;
 }
 .watermark {
   position: absolute;
