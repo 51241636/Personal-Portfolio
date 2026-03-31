@@ -838,7 +838,6 @@ footer {
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.7);
     text-align: center;
-    border: 2px solid red;
   }
   #qualificationIcon{
     display: none;
@@ -1026,6 +1025,14 @@ footer {
 
 
   }
+  #exercise-section > .heading >  .heading-Name::after{
+    position: absolute;
+    left: 70px;
+  }
+  #projectShowcase-section > .heading >  .heading-Name::after{
+    position: absolute;
+    left: 70px;
+  }
   footer > .gridHandling03{
     grid-template-columns: 1fr;
     font-size: 1em;
@@ -1158,6 +1165,10 @@ footer {
   left: 75px;
   box-shadow: 0 0 10px #a855f7;
   bottom: 0;
+}
+#contact-Section > .heading >  .heading-Name::after{
+  position: absolute;
+  left: 60px;
 }
 .about-heading >
 @keyframes textAppear {
@@ -1957,8 +1968,14 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+  font-family: 'Inter', sans-serif;
 
 
+}
+.detailsCard > .details > h2{
+  font-weight: 800;
+  /*font-size: 25px;*/
+  color: #807e7e;
 }
 .detailsCard{
   margin-top: 25px;
@@ -1993,9 +2010,18 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 90px;
   border-radius: 100%;
   padding: 10px;
+}
+.detail-side > .detailsCard:nth-child(2) > div:first-child{
+  margin-right: 70px;
+}
+/*.detail-side > .detailsCard:nth-child(3) > div:first-child{*/
+/*  margin-right: 90px;*/
+/*}*/
+.detail-side > .detailsCard:nth-child(3) > .details{
+  margin-right: 40px;
 }
 .details{
   /*display: flex;*/
@@ -2004,9 +2030,15 @@ footer {
   color: white;
   font-weight: 800;
 }
+.Linkedin{
+  color: cornflowerblue;
+  font-size: 20px;
+  text-decoration: none;
+}
 .fill-side{
   max-width: 550px;
   min-height: 60px;
+  font-family: 'Inter', sans-serif;
 
 
 }
@@ -2041,7 +2073,18 @@ footer {
   backdrop-filter: blur(10px);
   color: white;
 }
+.contact-buttons{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
 .button01{
+  width: 100px;
+  font-weight: 800;
+  /*position: absolute;*/
  height: 40px;
   border-radius: 2em;
   border: 1px solid rgba(255,255,255,0.4);
