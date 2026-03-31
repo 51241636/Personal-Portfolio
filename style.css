@@ -1062,7 +1062,7 @@ footer {
   z-index: 0;
   padding-bottom: 50px;
 }
-#aboutSection .star{
+ .star{
   position: absolute;
   top: 0;
   left: 0;
@@ -1072,16 +1072,16 @@ footer {
   animation: starAnimate 8s ease-in-out infinite;
 
 }
-#aboutSection .star.star1{
+.star.star1{
   animation-delay: 0s;
   background: url("assets/star1.png");
 }
 
-#aboutSection .star.star6{
+ .star.star6{
   animation-delay: -1s;
   background: url("assets/star6.png");
 }
-#aboutSection .star.star7{
+ .star.star7{
   animation-delay: -2s;
   background: url("assets/star7.png");
 }
