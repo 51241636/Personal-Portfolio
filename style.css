@@ -986,15 +986,22 @@ footer {
 
 
   }
-  .gallery-section > .banner{
-    max-width: 200px;
+  #gallery-section {
+    max-height: 400px;
   }
-  .gallery-section > .banner .slider .item{
+  #gallery-section > .banner .slider .item{
     /*position: absolute;*/
     /*inset: 0 ;*/
     transform:
-      /*rotateY(calc(  (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))*/
-      translateZ(10px) !important;
+      rotateY(calc(  (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))
+      translateZ(170px);
+
+  }
+  #gallery-section > .banner .slider .item img{
+    width: 150px;
+    height: 200px;
+
+
 
   }
   footer > .gridHandling03{
@@ -2031,7 +2038,7 @@ footer {
   position: relative;
   overflow: hidden;
   z-index: 0;
-  padding: 50px;
+  /*padding: 50px;*/
   overflow: hidden;
 }
 #gallery-section > .banner > .slider{
