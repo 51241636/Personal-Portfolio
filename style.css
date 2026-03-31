@@ -1880,6 +1880,7 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+
 }
 .contact-gridHandling {
   display: grid;
@@ -2007,6 +2008,15 @@ footer {
   background: rgb(5, 5, 5,0.5);
   backdrop-filter: blur(10px);
   color: white;
+}
+#gallery-section{
+  width: 100%;
+  min-height: 10vh;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding-bottom: 50px;
 }
 .watermark {
   position: absolute;
