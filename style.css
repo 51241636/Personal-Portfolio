@@ -986,6 +986,17 @@ footer {
 
 
   }
+  .gallery-section > .banner{
+    max-width: 200px;
+  }
+  .gallery-section > .banner .slider .item{
+    /*position: absolute;*/
+    /*inset: 0 ;*/
+    transform:
+      /*rotateY(calc(  (var(--position) - 1) * (360 / var(--quantity)) * 1deg ))*/
+      translateZ(10px) !important;
+
+  }
   footer > .gridHandling03{
     grid-template-columns: 1fr;
     font-size: 1em;
@@ -2064,7 +2075,7 @@ footer {
 }
 
 .banner .slider .item img{
-  width: 300px;
+  width: 200px;
   height: 100%;
   object-fit: cover;
 
