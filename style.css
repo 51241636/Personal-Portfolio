@@ -2034,14 +2034,14 @@ footer {
   padding: 50px;
   overflow: hidden;
 }
+#gallery-section > .banner > .slider{
+  padding-top:350px ;
+}
 .banner{
   max-width: 1000px;
-  height: 100vh;
+  min-height: 600px;
   text-align: center;
-  /*overflow: hidden;*/
   position: relative;
-  /*border: 2px solid red;*/
-  /*margin-left: 120px;*/
 
   margin: 0 auto;
   padding: 50px;
@@ -2067,9 +2067,9 @@ footer {
 }
 @keyframes autoRun {
   from{
-    transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+    transform: perspective(1000px) rotateX(-26deg) rotateY(0deg);
   }to{
-       transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+       transform: perspective(1000px) rotateX(-26deg) rotateY(360deg);
      }
 }
 
