@@ -1369,13 +1369,20 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
+  translate: -100%;
+  opacity: 0;
 
   line-height: 10px;
   font-style: normal;
   padding-top: 15px;
+  transition: 800ms ease;
 
 
 
+}
+#aboutSection.show > .about-heading{
+  translate: 0;
+  opacity: 1;
 }
 .heading-Name {
   font-size: 4.5em;
@@ -1419,6 +1426,25 @@ footer {
   color: #602d91;
   font-weight: 800;
 }
+.about-content{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#aboutSection.show > .gridHandling01 > .about-content{
+  translate: 0;
+  opacity: 1;
+}
+.about-img{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#aboutSection.show > .gridHandling01 > .about-img{
+  translate: 0;
+  opacity: 1;
+}
+
 .about-content > .aboutDescription {
   text-align: center;
    max-width: 800px;
@@ -1680,6 +1706,9 @@ footer {
   justify-content: center;
   align-items: center;
   align-content: center;
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
 
   line-height: 10px;
   font-style: normal;
@@ -1687,9 +1716,14 @@ footer {
 
   /*min-height: 100px;*/
 }
+.technology-section.show > .techSection-header{
+  translate: 0;
+  opacity: 1;
+}
 .technology-section > .techSection-header > h1{
   font-size:4em;
 }
+
 .technology-sphere{
   position: relative;
   top: 250px;
@@ -1706,9 +1740,16 @@ footer {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
   /*transform: translateX(360px);*/
   animation: autoRotate2 60s linear forwards infinite ;
 
+}
+.technology-section.show > .technology-sphere{
+  translate: 0;
+  opacity: 1;
 }
 @keyframes autoRotate2 {
   from{
