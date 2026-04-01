@@ -15,7 +15,7 @@ const observer02=new IntersectionObserver((entries)=>{
   }else{
     entries[0].target.classList.remove("show")
   }
-}, {threshold : 0.3})
+}, {threshold : 0.1})
 observer02.observe(section02);
 const  section03=document.querySelector(".technology-section")
 const observer03=new IntersectionObserver((entries)=>{

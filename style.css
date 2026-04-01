@@ -1331,7 +1331,9 @@ footer {
 .about-img{
   position: relative;
   min-width: 100px;
-  min-height: 500px;
+  min-height: 380px;
+  max-height: 700px;
+  /*border: 2px solid red;*/
 
 
 
