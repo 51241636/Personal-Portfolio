@@ -1003,6 +1003,130 @@ footer {
   .heading-Name{
     font-size: 35px !important;
   }
+  .technology-section > .technology-sphere >div{
+    transform: scale(0.8);
+  }
+  .technology-section > .technology-sphere > .techTexts{
+    width: 180px;
+    height: 180px;
+  }
+  .technology-section > .technology-sphere > .techTexts > .tech-content{
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+  }
+  .technology-section > .technology-sphere > div:nth-child(2){
+    position: absolute;
+    width:100px;
+    height: 100px;
+    top: -5px;
+    left: -10px;
+    background: url("assets/node.png");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+
+  }
+  /*.technology-sphere > div:nth-child(3){*/
+  /*  position: absolute;*/
+  /*  width:100px;*/
+  /*  height: 100px;*/
+  /*  top: 0;*/
+  /*  bottom: 0;*/
+  /*  margin: auto;*/
+  /*  left: -50px;*/
+  /*  !*border-radius: 3em;*!*/
+  /*  background: url("assets/java.png");*/
+  /*  background-size: cover;*/
+  /*  background-repeat: repeat-x;*/
+  /*  background-position: center;*/
+  /*  border: 1px solid grey;*/
+  /*  !*transform: skewX(-30deg);*!*/
+  /*}*/
+
+  .technology-section > .technology-sphere > div:nth-child(4){
+    position: absolute;
+    width:100px;
+    height: 100px;
+    /*top: 0;*/
+    bottom: -5px;
+    /*margin: auto;*/
+    /*left: -50px;*/
+    background: url("assets/tech03.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+
+    /*transform: skewX(-30deg);*/
+  }
+  /*.technology-sphere > div:nth-child(5){*/
+  /*  position: absolute;*/
+  /*  width:100px;*/
+  /*  height: 100px;*/
+
+  /*  bottom: -50px;*/
+  /*  margin: auto;*/
+  /*  left: 0;*/
+  /*  right: 0;*/
+  /*  !*border-radius: 3em;*!*/
+  /*  background: url("assets/swing.png");*/
+  /*  background-size: cover;*/
+  /*  background-repeat: repeat-x;*/
+  /*  background-position: center;*/
+  /*  border: 1px solid grey;*/
+  /*  !*transform: skewX(-30deg);*!*/
+  /*}*/
+  .technology-section > .technology-sphere > div:nth-child(6){
+    position: absolute;
+    width:100px;
+    height: 100px;
+
+    bottom: -5px;
+    margin: auto;
+    right: -10px;
+
+    /*border-radius: 3em;*/
+    background: url("assets/tech04.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    /*transform: skewX(-30deg);*/
+  }
+  /*.technology-sphere > div:nth-child(7){*/
+  /*  position: absolute;*/
+  /*  width:100px;*/
+  /*  height: 100px;*/
+
+
+  /*  margin: auto;*/
+  /*  top: 0;*/
+  /*  bottom: 0;*/
+  /*  right: -50px;*/
+  /*  border: 1px solid grey;*/
+  /*  !*border-radius: 3em;*!*/
+
+  /*  background: url("assets/SceneBuilderLogo.png");*/
+  /*  background-size: cover;*/
+  /*  background-repeat: repeat-x;*/
+  /*  background-position: center;*/
+  /*  !*transform: skewX(-30deg);*!*/
+  /*}*/
+  .technology-section > .technology-sphere > div:nth-child(8){
+    position: absolute;
+    width:100px;
+    height: 100px;
+
+    /*bottom: -50px;*/
+    /*margin: auto;*/
+    top: -5px;
+    right: -10px;
+    /*border-radius: 3em;*/
+    background: url("assets/tech06.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    /*transform: skewX(-30deg);*/
+  }
 
   #statusBatch { left: 220px; }
 
@@ -1525,10 +1649,11 @@ footer {
 .technology-section {
   min-width: 10px;
   /*width: 100%;*/
-  min-height: 120vh;
+  min-height: 100vh;
   background-color: black;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 
 
 }
@@ -1575,10 +1700,10 @@ footer {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(5px);
   /*transform: translateX(360px);*/
-  /*animation: autoRotate 60s linear forwards infinite ;*/
+  animation: autoRotate2 60s linear forwards infinite ;
 
 }
-@keyframes autoRotate {
+@keyframes autoRotate2 {
   from{
     transform: rotate(0deg);
   }to{
@@ -1592,7 +1717,7 @@ footer {
 /*}*/
 .technology-sphere > div{
   border-radius: 1.5em;
-  border: 2px solid #8e8b8b;
+  /*border: 2px solid #8e8b8b;*/
   background: rgb(128, 126, 126);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
   backdrop-filter: blur(10px);
@@ -1618,6 +1743,7 @@ footer {
 }
 .technology-sphere > div:first-child:hover ~.techTexts >  .tech-content:nth-child(7) {
   opacity: 1;
+  animation: paused;
 }
 .technology-sphere > div:nth-child(2):hover ~.techTexts >  .tech-content:nth-child(2) {
   opacity: 1;
@@ -1644,6 +1770,7 @@ footer {
   position: absolute;
   width: 250px;
   height: 250px;
+  padding: 10px;
   /*border: 2px solid red;*/
   top: 0;
   right: 0;
@@ -1661,6 +1788,14 @@ footer {
   opacity: 0;
   transition: 0.3s;
   border-radius: 100%!important;
+  background-color: #a855f7!important;
+}
+.tech-content > h1{
+  color: black;
+  font-weight: 800;
+}
+.tech-content > p{
+  font-weight: 700;
 }
 @keyframes rotateChild {
   from {
@@ -1792,8 +1927,16 @@ footer {
   margin: auto;
   width: 280px;
   height: 280px;
-  border: 2px solid red;
   border-radius: 100%!important;
+  background-color: #a855f7!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  box-shadow: 0 0 35px #a855f7!important;
 }
 .technology-sphere > div:hover{
 
