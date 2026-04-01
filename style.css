@@ -1525,10 +1525,9 @@ footer {
 .technology-section {
   min-width: 10px;
   /*width: 100%;*/
-  min-height: 100vh;
+  min-height: 120vh;
   background-color: black;
   position: relative;
-  overflow: hidden;
   z-index: 0;
 
 
@@ -1560,7 +1559,7 @@ footer {
   font-size:4em;
 }
 .technology-sphere{
-  position: absolute;
+  position: relative;
   top: 200px;
   left: 0;
   right: 0;
@@ -1568,13 +1567,13 @@ footer {
   margin: auto;
   width: 450px;
   height: 450px;
-  opacity: 20%;
+  opacity: 70%;
   border-radius: 100%;
   border: 2px solid white;
   background: rebeccapurple;
   border-top: 3px solid yellow;
   /*transform: translateX(360px);*/
-  animation: autoRotate 60s linear forwards;
+  /*animation: autoRotate 60s linear forwards infinite ;*/
 
 }
 @keyframes autoRotate {
@@ -1591,6 +1590,7 @@ footer {
 /*}*/
 .technology-sphere > div{
   border-radius: 1.5em;
+  /*animation: autoRotate 40s linear forwards infinite ;*/
 }
 .technology-sphere > div:first-child{
   position: absolute;
@@ -1600,31 +1600,76 @@ footer {
   left: 0;
   margin: auto;
   right: 0;
+  background: url("assets/tec01.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border: 2px solid red;
 
-  background-color: red;
+
   /*transform: skewX(-30deg);*/
 }
+.technology-sphere > div:first-child:hover ~ .tech-content {
+  opacity: 1;
+}
+.tech-content{
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  border: 2px solid red;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  animation: rotateChild 60s linear infinite!important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+}
+@keyframes rotateChild {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 .technology-sphere > div:nth-child(2){
   position: absolute;
   width:100px;
   height: 100px;
-  top: 50px;
-  left: -50px;
+  top: 10px;
+  left: 40px;
+  background: url("assets/node.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
 
-  background-color: red;
 }
-/*.technology-sphere > div:nth-child(3){*/
-/*  position: absolute;*/
-/*  width:100px;*/
-/*  height: 100px;*/
-/*  top: 0;*/
-/*  bottom: 0;*/
-/*  margin: auto;*/
-/*  left: -120px;*/
-/*  !*border-radius: 3em;*!*/
-/*  background-color: red;*/
-/*  !*transform: skewX(-30deg);*!*/
-/*}*/
+.technology-sphere > div:nth-child(3){
+  position: absolute;
+  width:100px;
+  height: 100px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: -50px;
+  /*border-radius: 3em;*/
+  background: url("assets/java.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border: 2px solid red;
+  /*transform: skewX(-30deg);*/
+}
 
 .technology-sphere > div:nth-child(4){
   position: absolute;
@@ -1633,9 +1678,12 @@ footer {
   /*top: 0;*/
   bottom: 50px;
   /*margin: auto;*/
-  left: -50px;
+  /*left: -50px;*/
+  background: url("assets/tech03.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
 
-  background-color: red;
   /*transform: skewX(-30deg);*/
 }
 .technology-sphere > div:nth-child(5){
@@ -1648,7 +1696,11 @@ footer {
   left: 0;
   right: 0;
   /*border-radius: 3em;*/
-  background-color: red;
+  background: url("assets/swing.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border: 2px solid red;
   /*transform: skewX(-30deg);*/
 }
 .technology-sphere > div:nth-child(6){
@@ -1661,23 +1713,31 @@ footer {
    right: -50px;
 
   /*border-radius: 3em;*/
-  background-color: red;
+  background: url("assets/tech04.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
   /*transform: skewX(-30deg);*/
 }
-/*.technology-sphere > div:nth-child(7){*/
-/*  position: absolute;*/
-/*  width:100px;*/
-/*  height: 20px;*/
+.technology-sphere > div:nth-child(7){
+  position: absolute;
+  width:100px;
+  height: 100px;
 
 
-/*  margin: auto;*/
-/*  top: 0;*/
-/*  bottom: 0;*/
-/*  right: -120px;*/
-/*  border-radius: 3em;*/
-/*  background-color: red;*/
-/*  transform: skewX(-30deg);*/
-/*}*/
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: -50px;
+  border: 2px solid red;
+  /*border-radius: 3em;*/
+
+  background: url("assets/SceneBuilderLogo.png");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  /*transform: skewX(-30deg);*/
+}
 .technology-sphere > div:nth-child(8){
   position: absolute;
   width:100px;
@@ -1685,10 +1745,13 @@ footer {
 
   bottom: -50px;
   /*margin: auto;*/
-  top: 50px;
-  right: -50px;
+  top: 20px;
+  right: -20px;
   /*border-radius: 3em;*/
-  background-color: red;
+  background: url("assets/tech06.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
   /*transform: skewX(-30deg);*/
 }
 .technology-sphere > div:hover{
