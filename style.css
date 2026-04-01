@@ -1567,12 +1567,23 @@ footer {
   bottom: 0;
   margin: auto;
   width: 450px;
-  height: 400px;
+  height: 450px;
   opacity: 20%;
   border-radius: 100%;
   border: 2px solid white;
+  background: rebeccapurple;
+  border-top: 3px solid yellow;
   /*transform: translateX(360px);*/
-  animation:sphereAnimate 30s infinite linear ;
+  animation: autoRotate 60s linear forwards;
+
+}
+@keyframes autoRotate {
+  from{
+    transform: rotate(0deg);
+  }to{
+     transform: rotate(360deg);
+   }
+
 
 }
 /*.technology-sphere:hover{*/
@@ -1597,7 +1608,7 @@ footer {
   position: absolute;
   width:100px;
   height: 100px;
-  top: 30px;
+  top: 50px;
   left: -50px;
 
   background-color: red;
@@ -1672,9 +1683,9 @@ footer {
   width:100px;
   height: 100px;
 
-  bottom: -30px;
+  bottom: -50px;
   /*margin: auto;*/
-  top: 30px;
+  top: 50px;
   right: -50px;
   /*border-radius: 3em;*/
   background-color: red;
