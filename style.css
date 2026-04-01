@@ -799,18 +799,25 @@ footer {
   #MainDiv01-leftSide > #Line01{
     font-size: 1.8em;
     font-weight: bolder;
+    margin-right: 30px;
   }
   #MainDiv01-leftSide > #Line02 >span{
-    font-size: 1.6em;
-    /*margin-right: 10px;*/
+    font-size: 35px;
+    margin-right: 38px;
   }
   #MainDiv01-leftSide > #Line03{
-    font-size: 1.7em;
-    /*margin-right: 10px;*/
+    font-size: 1.6em;
+    margin-right: 38px;
   }
-  /*#MainDiv01-leftSide > #description{*/
-  /*  margin-right: 10px;*/
-  /*}*/
+  #MainDiv01-leftSide > #description{
+    margin-right: 38px;
+  }
+  #MainDiv01-leftSide > .socialMediaIcon{
+    margin-right:65px;
+  }
+  #MainDiv01-leftSide > #buttons{
+    margin-right:38px;
+  }
 
 
   #MainDiv01-rightSide {
@@ -1998,6 +2005,7 @@ footer {
   background-color: black;
   position: relative;
   z-index: 0;
+  overflow: hidden;
 }
 
 /* HEADING */
@@ -2245,6 +2253,7 @@ footer {
   position: relative;
   z-index: 0;
   padding: 10px;
+  overflow: hidden;
 }
 .exercise-gridHandling {
   display: grid;
