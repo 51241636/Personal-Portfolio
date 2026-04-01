@@ -802,15 +802,15 @@ footer {
   }
   #MainDiv01-leftSide > #Line02 >span{
     font-size: 1.6em;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
   }
   #MainDiv01-leftSide > #Line03{
     font-size: 1.7em;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
   }
-  #MainDiv01-leftSide > #description{
-    margin-right: 10px;
-  }
+  /*#MainDiv01-leftSide > #description{*/
+  /*  margin-right: 10px;*/
+  /*}*/
 
 
   #MainDiv01-rightSide {
