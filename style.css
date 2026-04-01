@@ -157,10 +157,26 @@ header {
   font-family: 'Inter', sans-serif;
 
 }
+header > #navigationName > .nav01{
+  background-color: white;
+  color: #7307e1;
+}
+header > #navigationName > .nav01:hover{
+  background-color: transparent;
+  font-size: 25px;
+}
+header > #navigationName > a{
+
+
+  /*border: 2px solid red;*/
+  border-radius: 2em;
+  padding: 5px;
+}
 header > #navigationName > a:hover{
-  color: dimgrey;
   transition: 0.5s ;
-  text-shadow: 2px 2px 5px white;
+  color: white;
+  background-color: transparent;
+  font-size: 25px;
 }
 
 
