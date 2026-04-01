@@ -355,6 +355,28 @@ header > #navigationName > a:hover{
   cursor: pointer;
   /*z-index: 1000;*/
 }
+/*#buttons > button:hover,*/
+/*#buttons > button:focus {*/
+/*  transition: 1s;*/
+/*  box-shadow:*/
+/*    inset -8em 0 0 0 green,*/
+/*    inset 5em 0 0 0 green;*/
+/*}*/
+#buttons > button:nth-child(2):hover,
+#buttons > button:nth-child(2):focus {
+  transition: 1s;
+  box-shadow:
+    inset -3em 0 0 0 black,
+    inset 5em 0 0 0 #7e04e3;
+}
+#buttons > button:nth-child(1):hover,
+#buttons > button:nth-child(1):focus {
+  transition: 1s;
+  box-shadow:
+    inset -8em 0 0 0 black,
+    inset 5em 0 0 0 #7e04e3;
+  color:#7e04e3 ;
+}
 #buttons > button:nth-child(2){
   background-color: black;
   border: 1px solid purple;
@@ -858,6 +880,7 @@ footer {
     display: none;
 
   }
+
   #buttons{
     width: 330px !important;
     /*display: flex;*/
