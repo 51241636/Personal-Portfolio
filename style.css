@@ -1569,9 +1569,11 @@ footer {
   height: 450px;
   opacity: 70%;
   border-radius: 100%;
-  border: 2px solid white;
-  background: rebeccapurple;
-  border-top: 3px solid yellow;
+  border: 2px solid #8e8b8b;
+  background: rgb(126, 4, 227,0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
   /*transform: translateX(360px);*/
   /*animation: autoRotate 60s linear forwards infinite ;*/
 
@@ -1590,6 +1592,11 @@ footer {
 /*}*/
 .technology-sphere > div{
   border-radius: 1.5em;
+  border: 2px solid #8e8b8b;
+  background: rgb(128, 126, 126);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
   /*animation: autoRotate 40s linear forwards infinite ;*/
 }
 .technology-sphere > div:first-child{
@@ -1604,19 +1611,40 @@ footer {
   background-size: cover;
   background-repeat: repeat-x;
   background-position: center;
-  border: 2px solid red;
+  border: 1px solid grey;
 
 
   /*transform: skewX(-30deg);*/
 }
-.technology-sphere > div:first-child:hover ~ .tech-content {
+.technology-sphere > div:first-child:hover ~.techTexts >  .tech-content:nth-child(7) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(2):hover ~.techTexts >  .tech-content:nth-child(2) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(3):hover ~.techTexts >  .tech-content:nth-child(1) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(4):hover ~.techTexts >  .tech-content:nth-child(5) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(5):hover ~.techTexts >  .tech-content:nth-child(6) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(6):hover ~.techTexts >  .tech-content:nth-child(3) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(7):hover ~.techTexts >  .tech-content:nth-child(9) {
+  opacity: 1;
+}
+.technology-sphere > div:nth-child(8):hover ~.techTexts >  .tech-content:nth-child(8) {
   opacity: 1;
 }
 .tech-content{
   position: absolute;
   width: 250px;
-  height: 150px;
-  border: 2px solid red;
+  height: 250px;
+  /*border: 2px solid red;*/
   top: 0;
   right: 0;
   bottom: 0;
@@ -1632,6 +1660,7 @@ footer {
   padding: 10px;
   opacity: 0;
   transition: 0.3s;
+  border-radius: 100%!important;
 }
 @keyframes rotateChild {
   from {
@@ -1667,7 +1696,7 @@ footer {
   background-size: cover;
   background-repeat: repeat-x;
   background-position: center;
-  border: 2px solid red;
+  border: 1px solid grey;
   /*transform: skewX(-30deg);*/
 }
 
@@ -1700,7 +1729,7 @@ footer {
   background-size: cover;
   background-repeat: repeat-x;
   background-position: center;
-  border: 2px solid red;
+  border: 1px solid grey;
   /*transform: skewX(-30deg);*/
 }
 .technology-sphere > div:nth-child(6){
@@ -1729,7 +1758,7 @@ footer {
   top: 0;
   bottom: 0;
   right: -50px;
-  border: 2px solid red;
+  border: 1px solid grey;
   /*border-radius: 3em;*/
 
   background: url("assets/SceneBuilderLogo.png");
@@ -1753,6 +1782,18 @@ footer {
   background-repeat: repeat-x;
   background-position: center;
   /*transform: skewX(-30deg);*/
+}
+.techTexts{
+  position: absolute;
+  top:0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 280px;
+  border: 2px solid red;
+  border-radius: 100%!important;
 }
 .technology-sphere > div:hover{
 
