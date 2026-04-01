@@ -235,7 +235,7 @@ header > #navigationName > a:hover{
   display: flex;
   flex-direction: column;
 
-  /*padding: 20px;*/
+  padding-left: 30px;
   color: white;
   font-weight: bolder;
   z-index: 1;
@@ -1575,31 +1575,124 @@ footer {
   animation:sphereAnimate 30s infinite linear ;
 
 }
-.technology-sphere:hover{
-  animation: paused;
-}
+/*.technology-sphere:hover{*/
+/*  animation: paused;*/
+/*}*/
 .technology-sphere > div{
+  border-radius: 1.5em;
+}
+.technology-sphere > div:first-child{
   position: absolute;
   width:100px;
-  height: 20px;
-  top: -30px;
-  border-radius: 3em;
+  height: 100px;
+  top: -50px;
+  left: 0;
+  margin: auto;
+  right: 0;
+
   background-color: red;
-  transform: skewX(-30deg);
+  /*transform: skewX(-30deg);*/
+}
+.technology-sphere > div:nth-child(2){
+  position: absolute;
+  width:100px;
+  height: 100px;
+  top: 30px;
+  left: -50px;
+
+  background-color: red;
+}
+/*.technology-sphere > div:nth-child(3){*/
+/*  position: absolute;*/
+/*  width:100px;*/
+/*  height: 100px;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  margin: auto;*/
+/*  left: -120px;*/
+/*  !*border-radius: 3em;*!*/
+/*  background-color: red;*/
+/*  !*transform: skewX(-30deg);*!*/
+/*}*/
+
+.technology-sphere > div:nth-child(4){
+  position: absolute;
+  width:100px;
+  height: 100px;
+  /*top: 0;*/
+  bottom: 50px;
+  /*margin: auto;*/
+  left: -50px;
+
+  background-color: red;
+  /*transform: skewX(-30deg);*/
+}
+.technology-sphere > div:nth-child(5){
+  position: absolute;
+  width:100px;
+  height: 100px;
+
+  bottom: -50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  /*border-radius: 3em;*/
+  background-color: red;
+  /*transform: skewX(-30deg);*/
+}
+.technology-sphere > div:nth-child(6){
+  position: absolute;
+  width:100px;
+  height: 100px;
+
+  bottom: 50px;
+  margin: auto;
+   right: -50px;
+
+  /*border-radius: 3em;*/
+  background-color: red;
+  /*transform: skewX(-30deg);*/
+}
+/*.technology-sphere > div:nth-child(7){*/
+/*  position: absolute;*/
+/*  width:100px;*/
+/*  height: 20px;*/
+
+
+/*  margin: auto;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  right: -120px;*/
+/*  border-radius: 3em;*/
+/*  background-color: red;*/
+/*  transform: skewX(-30deg);*/
+/*}*/
+.technology-sphere > div:nth-child(8){
+  position: absolute;
+  width:100px;
+  height: 100px;
+
+  bottom: -30px;
+  /*margin: auto;*/
+  top: 30px;
+  right: -50px;
+  /*border-radius: 3em;*/
+  background-color: red;
+  /*transform: skewX(-30deg);*/
 }
 .technology-sphere > div:hover{
 
   /*transform: scale(1.5);*/
   /*animation: paused;*/
 }
-@keyframes sphereAnimate {
-  0%{
-    transform: rotate(0);
-  }100%{
-  transform: rotateY(360deg);
-     }
+/*@keyframes sphereAnimate {*/
+/*  0%{*/
+/*    transform: rotate(0);*/
+/*  }100%{*/
+/*  transform: rotateY(360deg);*/
+/*     }*/
 
-}
+/*}*/
 /* SECTION */
 .projectShowcase-section {
   min-width: 10px;

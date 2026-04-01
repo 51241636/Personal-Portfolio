@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .education-section {
+      border-left: 2px solid #38BDF8; /* Accent line */
+      padding-left: 20px;
+      margin-left: 10px;
+    }
+
+    .edu-item {
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .edu-dot {
+      position: absolute;
+      left: -27px;
+      top: 5px;
+      width: 12px;
+      height: 12px;
+      background: #38BDF8;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #38BDF8;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .edu-header h3 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .edu-date {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .edu-school {
+      margin: 5px 0;
+      color: #38BDF8;
+      font-weight: 500;
+    }
+
+    .edu-details {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+      opacity: 0.7;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+<section class="education-section">
+  <div class="edu-item">
+    <div class="edu-dot"></div>
+    <div class="edu-content">
+      <div class="edu-header">
+        <h3>Bachelor of Science in Computer Science</h3>
+        <span class="edu-date">2020 — 2024</span>
+      </div>
+      <p class="edu-school">Stanford University • California, USA</p>
+      <ul class="edu-details">
+        <li>Specialization in Artificial Intelligence</li>
+        <li>Relevant Coursework: Algorithms, OS, Machine Learning</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</body>
+</html>
