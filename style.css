@@ -436,7 +436,8 @@ header > #navigationName > a:hover{
   right: 0;
   bottom: 0;
   margin: auto;
-  width: 400px; height: 400px;
+  width: 400px;
+  height: 400px;
   border: 1px solid white;
   transform: rotate(-60deg);
   animation: scrolling02 40s infinite linear;
@@ -452,6 +453,21 @@ header > #navigationName > a:hover{
   border: 1px solid white;
   transform: rotate(80deg);
   animation: scrolling01 40s infinite linear;
+}
+.image{
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: url("assets/mainimage.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border-radius: 100%;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 
@@ -875,6 +891,21 @@ footer {
     position: absolute;
     width: 280px;
     height: 280px;
+  }
+  .image{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url("assets/mainimage.jpg");
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position: center;
+    border-radius: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
   header > #navigationName > a{
     display: none;
