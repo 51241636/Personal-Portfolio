@@ -1499,7 +1499,15 @@ footer {
   border-top-left-radius:2em ;
 
 }
+.education-gridHandling > div:nth-child(3) .eduImg{
+  background: url("assets/slit.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border-bottom-left-radius: 2em;
+  border-top-left-radius:2em ;
 
+}
 .education-gridHandling > div{
   display: grid;
   grid-template-columns: repeat(2,1fr);
