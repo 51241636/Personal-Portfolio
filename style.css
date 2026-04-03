@@ -676,6 +676,7 @@ footer {
 
 
 
+
 .rubik-wet-paint-regular {
   font-family: "Rubik Wet Paint", system-ui;
   font-weight: 400;
@@ -1795,6 +1796,18 @@ footer {
   flex-direction: column;
   justify-content: start;
   padding-bottom:30px ;
+
+}
+.footerColumn01 > h1{
+  animation: blink 2s infinite linear ;
+}
+@keyframes blink {
+  50%{
+    opacity: 0.4;
+  }100%{
+  opacity: 1;
+     }
+
 }
 .gridHandling03 > .footerColumn01 > .socialMediaIcon{
   /*position: absolute;*/
@@ -1823,6 +1836,10 @@ footer {
   flex-direction: column;
   /*justify-content: start;*/
   /*text-align: center;*/
+}
+.footerColumn02 > .quickLinks > a:hover {
+  color: white;
+  transition: 0.5s;
 }
 .footerColumn03{
   max-width: 350px;
@@ -2238,6 +2255,16 @@ footer {
   z-index: 0;
   overflow: hidden;
 }
+.projectShowcase-section > .heading{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+.projectShowcase-section.show > .heading{
+  translate: 0;
+  opacity: 1;
+
+}
 
 /* HEADING */
 .heading {
@@ -2310,6 +2337,46 @@ footer {
   transition: 0.2s ease-in;
   box-shadow: 0 0 10px white;
 }
+.projectShowcase-section > .project-gridHandling03 >  .project01{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+.projectShowcase-section.show > .project-gridHandling03 > .project01{
+  translate: 0;
+  opacity: 1;
+
+}
+.projectShowcase-section > .project-gridHandling03 >  .project02{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+.projectShowcase-section.show > .project-gridHandling03 > .project02{
+  translate: 0;
+  opacity: 1;
+
+}.projectShowcase-section > .project-gridHandling03 >  .project03{
+   translate: -100%;
+   opacity: 0;
+   transition: 800ms ease;
+ }
+.projectShowcase-section.show > .project-gridHandling03 > .project03{
+  translate: 0;
+  opacity: 1;
+
+}
+.projectShowcase-section > .gitHubLink {
+   translate: -100%;
+   opacity: 0;
+   transition: 800ms ease;
+ }
+.projectShowcase-section.show > .gitHubLink{
+  translate: 0;
+  opacity: 1;
+
+}
+
 
 
 .project01{
@@ -2676,33 +2743,33 @@ footer {
   transition: 0.5s;
   box-shadow: 0 0 15px white;
 }
-/*.exercise-section > .exercise-gridHandling > .project01{*/
-/*  translate: -100%;*/
-/*  opacity: 0;*/
-/*  transition: 800ms ease;*/
-/*}*/
-/*.exercise-section.show > .exercise-gridHandling > .project01{*/
-/*  translate: 0;*/
-/*  opacity: 1;*/
-/*}*/
-/*.exercise-section > .exercise-gridHandling > .project02{*/
-/*  translate: 100%;*/
-/*  opacity: 0;*/
-/*  transition: 800ms ease;*/
-/*}*/
-/*.exercise-section.show > .exercise-gridHandling > .project02{*/
-/*  translate: 0;*/
-/*  opacity: 1;*/
-/*}*/
-/*.exercise-section > .exercise-gridHandling > .project03{*/
-/*  translate: 100%;*/
-/*  opacity: 0;*/
-/*  transition: 800ms ease;*/
-/*}*/
-/*.exercise-section.show > .exercise-gridHandling > .project03{*/
-/*  translate: 0;*/
-/*  opacity: 1;*/
-/*}*/
+#exercise-section > .exercise-gridHandling > .project01{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#exercise-section.show > .exercise-gridHandling > .project01{
+  translate: 0;
+  opacity: 1;
+}
+#exercise-section > .exercise-gridHandling > .project02{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#exercise-section.show > .exercise-gridHandling > .project02{
+  translate: 0;
+  opacity: 1;
+}
+#exercise-section > .exercise-gridHandling > .project03{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#exercise-section.show > .exercise-gridHandling > .project03{
+  translate: 0;
+  opacity: 1;
+}
 .exercise-gridHandling > .project01{
   background: url("assets/assignment02.png");
   background-size: cover;

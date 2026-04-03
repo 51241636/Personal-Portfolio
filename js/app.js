@@ -1,4 +1,4 @@
-const  section=document.querySelector(".exercise-section")
+const  section=document.querySelector("#exercise-section")
 const observer=new IntersectionObserver((entries)=>{
   if(entries[0].isIntersecting){
     entries[0].target.classList.add("show")
@@ -26,3 +26,12 @@ const observer03=new IntersectionObserver((entries)=>{
   }
 }, {threshold : 0.3})
 observer03.observe(section03);
+const  section04=document.querySelector(".projectShowcase-section")
+const observer04=new IntersectionObserver((entries)=>{
+  if(entries[0].isIntersecting){
+    entries[0].target.classList.add("show")
+  }else{
+    entries[0].target.classList.remove("show")
+  }
+}, {threshold : 0.3})
+observer04.observe(section04);
