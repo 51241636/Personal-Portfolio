@@ -35,3 +35,12 @@ const observer04=new IntersectionObserver((entries)=>{
   }
 }, {threshold : 0.3})
 observer04.observe(section04);
+
+function myFunction() {
+  var x = document.getElementById("navigationName");
+  if (x.className === "topNav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topNav";
+  }
+}

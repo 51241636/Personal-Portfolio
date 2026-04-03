@@ -196,7 +196,7 @@ header > #navigationName > a:hover{
   margin-right: 50px;
 
 }
-#navigationName > #navIcon{
+#navigationName > .icon{
   display: none;
 }
 #navigationName > a {
@@ -388,7 +388,7 @@ header > #navigationName > a:hover{
 }
 #buttons > button:nth-child(1):hover,
 #buttons > button:nth-child(1):focus {
-  transition: 1s;
+  transition: all 1s ease-in-out;
   box-shadow:
     inset -8em 0 0 0 black,
     inset 5em 0 0 0 #7e04e3;
@@ -757,6 +757,7 @@ footer {
     animation: scrolling02 60s infinite linear;
   }
 }
+#menu{display: none}
 /*phone resposive*/
 @media (max-width: 768px) {
   #MainSection {
@@ -958,15 +959,36 @@ footer {
     right: 0;
     margin: auto;
   }
-  header > #navigationName > a{
-    display: none;
 
-  }
-  #navigationName > #navIcon{
+
+  /*header > #navigationName > a{*/
+  /*  display: none;*/
+
+  /*}*/
+  #navigationName > .icon{
     display: block;
     color: white;
     font-size: 25px;
   }
+  .topNav a:not(.icon) {
+    display: none;
+  }
+
+  .topNav .icon {
+    display: block;
+  }
+
+  .topNav.responsive a {
+    display: block;
+    text-align: left;
+  }
+
+  .topNav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   #buttons > button::before,
   #buttons > button::after {
     content: "";
