@@ -1340,16 +1340,40 @@ footer {
   min-width: 100px;
   min-height: 380px;
   max-height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  text-align: center;
   /*border: 2px solid red;*/
 
 
 
 
 }
-.education-button > a{
+.education-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  width: 300px;
+  height: 60px;
   position: absolute;
-  bottom: 0;
-  left: calc(50% - 250px);
+  bottom: -80px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2em;
+  border: 1px solid grey;
+  backdrop-filter: blur(10px);
+
+}
+
+.education-button > a{
+  color: grey;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 .additional-info{
  width : 400px;
