@@ -981,6 +981,10 @@ footer {
   #education-section > .education-gridHandling > div{
     grid-template-columns: 1fr ;
   }
+ .gridHandling01 > .about-img >  .education-button{
+   position: absolute;
+   top: -60px;
+ }
 
   #Line01 { font-size: 1.3em; margin-left: 16px; }
   #Line02 { font-size: 1.9em; margin-left: 16px; }
@@ -1365,7 +1369,15 @@ footer {
   border-radius: 2em;
   border: 1px solid grey;
   backdrop-filter: blur(10px);
+  animation: eduButton 3s infinite linear;
 
+}
+@keyframes eduButton {
+ 50%{
+  transform: scale(1.1);
+  } 100%{
+  transform: scale(1);
+      }
 }
 .education-button:hover,
 .education-button:focus {
