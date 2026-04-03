@@ -139,7 +139,7 @@ html {
 
 /* header  */
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 60px;
@@ -758,6 +758,25 @@ footer {
   }
 }
 #menu{display: none}
+.topNav.responsive {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 200px;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+
+.topNav.responsive a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
 /*phone resposive*/
 @media (max-width: 768px) {
   #MainSection {
@@ -965,6 +984,7 @@ footer {
   /*  display: none;*/
 
   /*}*/
+
   #navigationName > .icon{
     display: block;
     color: white;
@@ -976,11 +996,18 @@ footer {
 
   .topNav .icon {
     display: block;
+    /*border: 2px solid red;*/
+
   }
 
   .topNav.responsive a {
     display: block;
     text-align: left;
+    /*border: 2px solid red;*/
+
+
+
+
   }
 
   .topNav.responsive .icon {
