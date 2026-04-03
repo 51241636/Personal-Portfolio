@@ -1445,11 +1445,11 @@ footer {
   z-index: 0;
   padding: 10px;
   overflow: hidden;
+  padding-top: 50px;
 }
 .education-gridHandling{
   display: grid;
   grid-template-columns: repeat(1,1fr);
-  border: 2px solid red;
   gap: 50px;
   padding-top: 250px;
   padding-left: 100px;
@@ -1463,13 +1463,30 @@ footer {
 .education-gridHandling > div{
   min-width: 300px;
   min-height: 200px;
-  border: 2px solid red;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid grey;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 2em;
   color: white;
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
 
 
 
+}
+.education-gridHandling > div:hover{
+  transform: scale(1.03);
+  transition: 0.8s;
+
+}
+.eduContent > h1{
+  color: #8009f4;
+  font-weight: 800;
+}
+.eduContent > p{
+  color: grey;
+  font-weight: 650;
 }
 .eduContent{
   display: flex;
