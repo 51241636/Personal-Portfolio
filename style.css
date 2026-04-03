@@ -1367,9 +1367,15 @@ footer {
   backdrop-filter: blur(10px);
 
 }
-
+.education-button:hover,
+.education-button:focus {
+  transition: 1s;
+  box-shadow:
+    inset -11em 0 0 0 black,
+    inset 10em 0 0 0 #7e04e3;
+}
 .education-button > a{
-  color: grey;
+  color: #b5b2b2;
   font-size: 1.3em;
   font-weight: 600;
   text-decoration: none;
