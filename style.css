@@ -1493,6 +1493,10 @@ footer {
   transform: scale(1.07);
   transition: 0.8s;
 }
+.education-gridHandling > div:nth-child(2) .eduImg:hover{
+  transform: scale(1.07);
+  transition: 0.8s;
+}
 
 .education-gridHandling > div:nth-child(2) .eduImg{
   background: url("assets/ijse.jpg");
