@@ -1487,6 +1487,19 @@ footer {
   border-top-left-radius:2em ;
 
 }
+.education-gridHandling > div:first-child .eduImg:hover{
+  transform: scale(1.1);
+}
+.education-gridHandling > div:nth-child(2) .eduImg{
+  background: url("assets/ijse.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: center;
+  border-bottom-left-radius: 2em;
+  border-top-left-radius:2em ;
+
+}
+
 .education-gridHandling > div{
   display: grid;
   grid-template-columns: repeat(2,1fr);
