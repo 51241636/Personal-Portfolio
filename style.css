@@ -1466,6 +1466,7 @@ footer {
   border: 2px solid red;
   border-radius: 2em;
   color: white;
+  overflow: hidden;
 
 
 
@@ -1485,11 +1486,14 @@ footer {
   background-position: center;
   border-bottom-left-radius: 2em;
   border-top-left-radius:2em ;
+  overflow: hidden;
 
 }
 .education-gridHandling > div:first-child .eduImg:hover{
-  transform: scale(1.1);
+  transform: scale(1.07);
+  transition: 0.8s;
 }
+
 .education-gridHandling > div:nth-child(2) .eduImg{
   background: url("assets/ijse.jpg");
   background-size: cover;
@@ -1497,6 +1501,7 @@ footer {
   background-position: center;
   border-bottom-left-radius: 2em;
   border-top-left-radius:2em ;
+  overflow: hidden;
 
 }
 .education-gridHandling > div:nth-child(3) .eduImg{
