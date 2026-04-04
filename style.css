@@ -182,9 +182,11 @@ header > #navigationName > a:hover{
 
 
 #portfolioLogo {
-  color: white;
+  background: linear-gradient(to right, #ffffff, #8A2BE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 40px;
   margin-top: 10px;
   margin-left: 10px;
 }
