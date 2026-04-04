@@ -798,14 +798,17 @@ footer {
     text-align: center;
   }
   #MainDiv01-leftSide > #description{
-    font-size: 1.8em!important;
+    font-size: 1.6em!important;
   }
   #MainDiv01-leftSide > .socialMediaIcon{
     margin-right:65px;
     gap: 10px;
   }
   #MainDiv01-leftSide > #buttons{
+    width: 500px;
     margin-right:38px;
+    gap: 30px;
+    /*border:2px solid red;*/
   }
   #contact-Section > .contact-gridHandling > .fill-side{
     min-width: 530px!important;
