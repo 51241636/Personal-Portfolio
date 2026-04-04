@@ -780,8 +780,34 @@ footer {
   text-align: center;
   font-size: 18px;
 }
+@media  (max-width: 900px) and (min-width: 768px){
+  #MainDiv01-leftSide > #Line01{
+    font-size: 3em!important;
+    /*font-weight: bolder;*/
+    /*margin-right: 30px;*/
+  }
+  #MainDiv01-leftSide > #Line02 >span{
+    font-size: 2em!important;
+    margin-right: 38px;
+  }
+  #MainDiv01-leftSide > #Line03{
+    font-size: 2em!important;
+    margin-right: 34px;
+    text-align: center;
+  }
+  #MainDiv01-leftSide > #description{
+    font-size: 1.8em!important;
+  }
+  #MainDiv01-leftSide > .socialMediaIcon{
+    margin-right:65px;
+    gap: 10px;
+  }
+  #MainDiv01-leftSide > #buttons{
+    margin-right:38px;
+  }
+}
 /*phone resposive*/
-@media (max-width: 768px) {
+@media (max-width: 915px) {
   #MainSection {
     min-height: 100vh;
     height: auto;
@@ -799,11 +825,16 @@ footer {
   }
   #aboutSection > .gridHandling01{
     grid-template-columns: 1fr;
+
+
     /*padding-top: 55px;*/
     /*padding-left: 12px;*/
     /*padding-right: 12px;*/
     /*gap: 0;*/
     /*margin: -300px auto 0 auto;*/
+  }
+  #aboutSection > .gridHandling01 > .about-content{
+    margin: 0 auto;
   }
   .projectShowcase-section > .project-gridHandling03{
     grid-template-columns: 1fr;
@@ -2618,6 +2649,8 @@ footer {
   padding-top: 250px;
   overflow: hidden;
   justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
 
   /*padding-left: 80px;*/
   /*padding-right: 80px;*/
