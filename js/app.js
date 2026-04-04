@@ -5,7 +5,7 @@ const observer=new IntersectionObserver((entries)=>{
   }else{
     entries[0].target.classList.remove("show")
   }
-}, {threshold : 0.3})
+}, {threshold : 0.1})
 observer.observe(section);
 
 const  section02=document.querySelector("#aboutSection")
