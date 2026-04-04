@@ -33,10 +33,14 @@ const observer04=new IntersectionObserver((entries)=>{
   }else{
     entries[0].target.classList.remove("show")
   }
-}, {threshold : 0.3})
+}, {threshold : 0.1})
 observer04.observe(section04);
 
 function myFunction() {
   let nav = document.getElementById("navigationName");
-  nav.classList.toggle("responsive");
+  if (nav.className === "topNav") {
+    nav.className += " responsive";
+  } else {
+    nav.className = "topNav";
+  }
 }
