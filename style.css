@@ -142,7 +142,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60px;
+  min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,6 +177,7 @@ header > #navigationName > a:hover{
   color: white;
   background-color: transparent;
   font-size: 25px;
+
 }
 
 
@@ -761,7 +762,7 @@ footer {
 .topNav.responsive {
   position: absolute;
   top: 60px;
-  left: 0;
+  right: 0;
   width: 200px;
   background: rgba(0,0,0,0.9);
   display: flex;
@@ -986,9 +987,13 @@ footer {
   /*}*/
 
   #navigationName > .icon{
+    position: relative;
+    right: 0;
+    top: 0;
     display: block;
     color: white;
     font-size: 25px;
+
   }
   .topNav a:not(.icon) {
     display: none;
@@ -996,14 +1001,15 @@ footer {
 
   .topNav .icon {
     display: block;
-    /*border: 2px solid red;*/
+
 
   }
 
   .topNav.responsive a {
     display: block;
     text-align: left;
-    /*border: 2px solid red;*/
+
+
 
 
 
