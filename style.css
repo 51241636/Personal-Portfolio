@@ -3155,17 +3155,23 @@ footer {
   /*margin: 0 auto;*/
   padding: 50px;
 
+
+}
+.banner .slider > .heading{
+  position: absolute;
+  top: 0;
 }
 .banner .slider{
   position: absolute;
   width: 150px;
-  height: 200px;
+  max-height: 10px;
   /*border: 2px solid red;*/
   top: 10%;
   left: calc(50% - 100px);
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: autoRun 60s linear infinite;
+
 }
 .banner .slider .item{
   position: absolute;
