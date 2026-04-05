@@ -1,49 +1,13 @@
+/*smooth scrolling*/
 html {
   scroll-behavior: smooth;
 }
 
 
- .color-pulse{
-   position: fixed;
-   right: 0;
-   border-radius: 3em;
-   bottom: 0;
-   margin-right: 30px;
-   margin-bottom:30px;
-   width: 60px;
-  height: 60px;
-   z-index: 1;
-   background-color: #25D366 ;
-  /*animation: whatsappIconAni 1s infinite;*/
-}
-.color-pulse > span{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
-  border-radius: inherit;
-  animation: whatsappIconAni 2s ease-out infinite;
-}
-.color-pulse > a{
-  position: absolute;
-  font-size: 45px;
-  z-index: 1000;
-  padding-left: 3px;
-  padding-top: 6px;
-
-}
-@keyframes whatsappIconAni {
-  100%{
-    opacity: 0;
-    transform: scale(1.5);
-  }
-
-
-}
+/*main Section styles*/
 #MainSection {
-  max-width: 100vw;
-  /*height: 100vh;*/
-  min-height: 100vh;
+  min-width: 10px;
+  min-height: 100px;
   background-color: black;
   position: relative;
   overflow: hidden;
@@ -59,7 +23,7 @@ html {
 }
 
 
-
+/*main section background animation*/
 .wrapper > span {
   position: absolute;
   bottom: -180px;
@@ -180,7 +144,7 @@ header > #navigationName > a:hover{
 
 }
 
-
+/*logo add*/
 #portfolioLogo {
   background: linear-gradient(to right, #ffffff, #8A2BE2);
   -webkit-background-clip: text;
@@ -209,36 +173,10 @@ header > #navigationName > a:hover{
   font-weight: bolder;
 }
 
-
-
-/*#hireAvailability {*/
-/*  width: 300px;*/
-/*  height: 45px;*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  gap: 8px;*/
-/*  border-radius: 4em;*/
-/*  color: white;*/
-/*  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);*/
-/*  backdrop-filter: blur(5px);*/
-/*  -webkit-backdrop-filter: blur(5px);*/
-/*  border: 1px solid rgba(255, 255, 255, 0.5);*/
-/*  background: rgba(255, 255, 255, 0.15);*/
-/*  margin-left: 30px;*/
-
-/*}*/
-
-.fa-circle-dot {
-  color: #51B55D;
-}
- /*Main section grid*/
-
+ /*main section grid*/
  .gridHandling01 {
   display: grid;
   grid-template-columns: repeat(2,1fr);
-  /*gap: 25px;*/
-  /*min-width: ;*/
    min-height: 10px;
   min-width: 10px;
   padding-top: 80px;
@@ -246,6 +184,7 @@ header > #navigationName > a:hover{
   margin: 0 auto;
 
 }
+/*main section grid-left side*/
 
 #MainDiv01-leftSide {
   min-width: 10px;
@@ -253,6 +192,9 @@ header > #navigationName > a:hover{
   grid-column: 1;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-content: start;
+  align-items: start;
 
 
   padding-left: 30px;
@@ -261,15 +203,15 @@ header > #navigationName > a:hover{
   z-index: 1;
 
 }
+/*main section grid-right side*/
 
 #MainDiv01-rightSide {
-  /*grid-column: ;*/
+
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
-  /*min-height: 200px;*/
   text-align: center;
 }
 
@@ -317,6 +259,7 @@ header > #navigationName > a:hover{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
+/*qualification icons*/
 #qualificationIcon {
   position: relative;
   margin-top: 20px;
@@ -346,7 +289,7 @@ header > #navigationName > a:hover{
 #qualificationIcon > div:nth-child(3) { width: 130px; left: 220px; top: 0; }
 #qualificationIcon > div:nth-child(4) { width: 90px;  left: 0;     top: 50px; }
 #qualificationIcon > div:nth-child(5) { width: 90px;  left: 110px; top: 50px; }
-
+/*buttons*/
 #buttons {
   width: 470px;
   height: 50px;
@@ -355,8 +298,6 @@ header > #navigationName > a:hover{
   display: flex;
   justify-content: space-between;
   font-family: 'Inter', sans-serif;
-
-  /*z-index: 1;*/
 }
 #buttons > button {
   width: 230px;
@@ -373,15 +314,7 @@ header > #navigationName > a:hover{
   position: relative;
   border: none;
   cursor: pointer;
-  /*z-index: 1000;*/
 }
-/*#buttons > button:hover,*/
-/*#buttons > button:focus {*/
-/*  transition: 1s;*/
-/*  box-shadow:*/
-/*    inset -8em 0 0 0 green,*/
-/*    inset 5em 0 0 0 green;*/
-/*}*/
 #buttons > button:nth-child(2):hover,
 #buttons > button:nth-child(2):focus {
   transition: 1s;
@@ -439,6 +372,7 @@ header > #navigationName > a:hover{
   font-size: 34px;
   z-index: 10000;
   opacity: 50%;
+  gap: 20px;
 }
 .socialMediaIcon > a {
   border: 2px solid white;
@@ -458,7 +392,7 @@ header > #navigationName > a:hover{
 .socialMediaIcon > a:nth-child(4):hover { color: red;       border-color: red;       box-shadow: 0 0 30px red; }
 .socialMediaIcon > a:nth-child(5):hover { color: #ee2a7b;   border-color: #ee2a7b;   box-shadow: 0 0 30px #ee2a7b; }
 
-
+/*rotate square 01*/
 .square01 {
   position: absolute;
   top: 0;
@@ -471,6 +405,8 @@ header > #navigationName > a:hover{
   transform: rotate(-60deg);
   animation: scrolling01 50s infinite linear;
 }
+/*rotate square 02*/
+
 .square02 {
   position: absolute;
   top: 0;
@@ -484,6 +420,8 @@ header > #navigationName > a:hover{
   transform: rotate(-60deg);
   animation: scrolling02 40s infinite linear;
 }
+/*rotate square 03*/
+
 .square03 {
   position: absolute;
   top: 0;
@@ -496,6 +434,7 @@ header > #navigationName > a:hover{
   transform: rotate(80deg);
   animation: scrolling01 40s infinite linear;
 }
+/*add main image*/
 .image{
   position: absolute;
   width: 300px;
@@ -511,6 +450,7 @@ header > #navigationName > a:hover{
   right: 0;
   margin: auto;
 }
+/*rotate square 04*/
 
 
 .square04 {
@@ -526,85 +466,17 @@ header > #navigationName > a:hover{
   animation: scrolling02 60s infinite linear;
 }
 
+/*animations of square*/
 @keyframes scrolling01 {
   100% { transform: rotate(360deg); }
 }
 @keyframes scrolling02 {
   100% { transform: rotate(-360deg); }
 }
-/*#batches{*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*   width: 500px;*/
-/*  height: 700px;*/
-/*  border: 2px solid red;*/
-/*}*/
 
 
-#experienceBatch {
-  position: absolute;
-  top: 0;
-  width: 95px;
-  height: 40px;
-  color: gray;
-  font-weight: bolder;
-  /*animation: breathingBadge 2s infinite linear;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 2em;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(12, 12, 12, 0.15);
-  box-sizing: border-box;
-}
-#statusBatch {
-  position: absolute;
-  top: 300px;
-  color: gray;
-  font-weight: bolder;
-  /*margin-left: 160px;*/
-  width: 130px;
-  /*left: 700px;*/
-  height: 45px;
-  /*animation: breathingBadgeStatus 2s infinite linear;*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  text-align: center;
-  border-radius: 2em;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(12, 12, 12, 0.15);
-  box-sizing: border-box;
-}
-#projectCount {
-  position: absolute;
-  color: gray;
-  font-weight: bolder;
-  margin-left: 10px;
-  width: 100px;
-  height: 45px;
-  top: 400px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 2em;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(12, 12, 12, 0.15);
-  box-sizing: border-box;
-}
+
 
 @keyframes breathingBadge {
   0%   { top: 300px; }
@@ -621,7 +493,7 @@ header > #navigationName > a:hover{
   100% { top: 500px; }
 }
 
-
+/*scrolling animation bottom of the main section*/
 .languageScrolling {
   width: 100%;
   height: 60px;
@@ -663,7 +535,7 @@ header > #navigationName > a:hover{
   to   { transform: translateX(-100%); }
 }
 
-
+/*footer design*/
 footer {
   position: relative;
   width: 100%;
@@ -686,7 +558,7 @@ footer {
   font-style: normal;
 }
 
-
+/*media query when increase display size*/
 @media (max-width: 1024px) {
   #MainSection > .gridHandling01 {
     max-width: 100%;
@@ -707,8 +579,6 @@ footer {
   #MainSection > .gridHandling01{
     padding-top: 180px;
   }
-  #hireAvailability{width:350px }
-  #qualificationIcon > div:nth-child(3) { width: 150px; left: 220px; top: 0; }
   .square01 {
     position: absolute;
     top: 0;
@@ -808,7 +678,6 @@ footer {
     width: 500px;
     margin-right:38px;
     gap: 30px;
-    /*border:2px solid red;*/
   }
   #contact-Section > .contact-gridHandling > .fill-side{
     min-width: 530px!important;
@@ -894,16 +763,16 @@ footer {
     margin-right: 30px;
   }
   #MainDiv01-leftSide > #Line02 >span{
-    font-size: 34px;
+    font-size: 1.8rem;
     margin-right: 38px;
   }
   #MainDiv01-leftSide > #Line03{
-    font-size: 1.6em;
+    font-size: 1.6rem;
     margin-right: 34px;
     text-align: center;
   }
   #MainDiv01-leftSide > #description{
-    margin-right: 38px;
+    margin-right: 1.6rem;
   }
   #MainDiv01-leftSide > .socialMediaIcon{
     margin-right:65px;
@@ -911,6 +780,7 @@ footer {
   }
   #MainDiv01-leftSide > #buttons{
     margin-right:38px;
+    min-width: 330px;
   }
 
 
@@ -983,7 +853,7 @@ footer {
   }
 
   #buttons{
-    min-width: 330px !important;
+    !important;
     /*display: flex;*/
     /*justify-content:space-between;*/
     /*gap: 45px;*/
@@ -1093,11 +963,6 @@ footer {
    position: absolute;
    top: -60px;
  }
-
-  #Line01 { font-size: 1.3em; margin-left: 16px; }
-  #Line02 { font-size: 1.9em; margin-left: 16px; }
-  #Line03 { font-size: 1.3em; margin-left: 16px; }
-  #description { margin-left: 16px; font-size: 0.9em; }
 
   #qualificationIcon { margin-left: 16px; }
 
@@ -2004,15 +1869,12 @@ footer {
 }
 .technology-section {
   min-width: 10px;
-  /*width: 100%;*/
-  min-height: 100vh;
+  min-height: 10px;
   background-color: black;
   position: relative;
   z-index: 0;
   overflow: hidden;
   padding-bottom: 100px;
-
-
 }
 .technology-section > .techSection-header{
   min-width: 400px;
