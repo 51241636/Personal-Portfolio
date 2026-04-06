@@ -248,10 +248,42 @@ header > #navigationName > a:hover{
   margin-left: 30px;
 }
 #Line03 > span{
+  position: relative;
   background: linear-gradient(to right, #8B5CF6, #513690);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+}
+#Line03 > span::before,
+#Line03 > span::after{
+  content: '';
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+}
+#Line03 > span::before{
+  background-color: black;
+  animation: typewrite 5s steps(22) forwards infinite;
+}
+#Line03 > span::after{
+  width: 0.125em;
+  background: purple;
+
+  animation:  typewrite 5s steps(22) forwards infinite,blink 500ms steps(22) forwards infinite;
+}
+@keyframes blink {
+  100%{
+    background: transparent;
+  }
+}
+@keyframes typewrite {
+  100%{
+    left: 100%;
+  }
 }
 #description {
   margin-left: 30px;
