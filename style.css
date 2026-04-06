@@ -787,25 +787,24 @@ footer {
     justify-content: center;
     align-items: center;
     align-content:center ;
-    /*border: 2px solid red;*/
 
 
   }
   #MainDiv01-leftSide > #Line01{
     font-size: 1.8em;
     font-weight: bolder;
-    margin: 0 auto;
+    margin-right: 55px;
 
   }
   #MainDiv01-leftSide > #Line02 >span{
     font-size: 1.8rem;
-    margin: 0 auto;
-    margin-right: 2rem;
+
+    margin-right: 50px;
 
   }
   #MainDiv01-leftSide > #Line03{
     font-size: 1.3rem;
-    margin: 0 auto;
+    margin-right: 35px;
 
     text-align: center;
   }
@@ -813,7 +812,7 @@ footer {
     margin-right: 60px;
   }
   #MainDiv01-leftSide > .socialMediaIcon{
-
+    margin-right:65px;
     gap: 10px;
   }
   #MainDiv01-leftSide > #buttons{
