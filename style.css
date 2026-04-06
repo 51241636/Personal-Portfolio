@@ -243,7 +243,7 @@ header > #navigationName > a:hover{
 
 #Line03 {
   color: white;
-  font-size: 2em;
+  font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 30px;
 }
@@ -742,6 +742,7 @@ footer {
     padding-right: 12px;
     gap: 0;
     margin: -300px auto 0 auto;
+
   }
   #aboutSection > .gridHandling01{
     grid-template-columns: 1fr;
@@ -786,28 +787,33 @@ footer {
     justify-content: center;
     align-items: center;
     align-content:center ;
+    /*border: 2px solid red;*/
 
 
   }
   #MainDiv01-leftSide > #Line01{
     font-size: 1.8em;
     font-weight: bolder;
-    margin-right: 30px;
+    margin: 0 auto;
+
   }
   #MainDiv01-leftSide > #Line02 >span{
     font-size: 1.8rem;
-    margin-right: 38px;
+    margin: 0 auto;
+    margin-right: 2rem;
+
   }
   #MainDiv01-leftSide > #Line03{
-    font-size: 1.6rem;
-    margin-right: 34px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+
     text-align: center;
   }
   #MainDiv01-leftSide > #description{
-    margin-right: 1.6rem;
+    margin-right: 60px;
   }
   #MainDiv01-leftSide > .socialMediaIcon{
-    margin-right:65px;
+
     gap: 10px;
   }
   #MainDiv01-leftSide > #buttons{
