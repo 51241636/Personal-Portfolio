@@ -2747,9 +2747,9 @@ footer {
   background-position: center;
 }
 .exercise-gridHandling > .project03{
-  background: url("assets/assignment02.png");
+  background: url("assets/assignment01.png");
   background-size: cover;
-  background-repeat: repeat-x;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .exercise-gridHandling > .project04{
