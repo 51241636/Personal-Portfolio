@@ -2,6 +2,43 @@
 html {
   scroll-behavior: smooth;
 }
+#loderPage{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999;
+  animation: blurPage 9s forwards ;
+}
+.logo {
+  background: linear-gradient(to right, #ffffff, #8A2BE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  font-family: 'Rubik Wet Paint', cursive;
+  font-size: 4em;
+}
+
+#counter {
+  font-size:3em;
+  background: linear-gradient(to right, #ffffff, #8A2BE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Inter', sans-serif;
+
+}
+@keyframes blurPage {
+  100%{
+    opacity: 0;
+    z-index: -1000;
+  }
+
+}
 
 
 /*main Section styles*/

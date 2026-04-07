@@ -44,4 +44,17 @@ function myFunction() {
     nav.className = "topNav";
   }
 }
+let count = 0;
+let counter = document.getElementById("counter");
 
+let interval = setInterval(() => {
+  count++;
+  counter.innerText = count + "%";
+
+  if (count === 100) {
+    clearInterval(interval);
+
+    document.getElementById("loaderPage").style.display = "none";
+    document.getElementById("MainSection").style.display = "block";
+  }
+}, 50);
