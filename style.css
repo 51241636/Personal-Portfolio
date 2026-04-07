@@ -194,6 +194,10 @@ header > #navigationName > a:hover{
   font-size: 40px;
   margin-top: 10px;
   margin-left: 10px;
+
+}
+#portfolioLogo > a{
+  text-decoration: none;
 }
 
 #navigationName {
