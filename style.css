@@ -163,6 +163,7 @@ header {
 }
 header > #navigationName > .nav01{
   background-color: white;
+  padding-left: 12px;
   color: #7307e1;
 }
 header > #navigationName > .nav01:hover{
@@ -178,7 +179,7 @@ header > #navigationName > a{
 }
 header > #navigationName > a:hover{
   transition: 0.5s ;
-  color: white;
+  color: #6a3fa6;
   background-color: transparent;
   font-size: 25px;
 
