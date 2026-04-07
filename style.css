@@ -2,6 +2,7 @@
 html {
   scroll-behavior: smooth;
 }
+/*loading page*/
 #loderPage{
   position: fixed;
   width: 100%;
@@ -15,6 +16,7 @@ html {
   z-index: 999999;
   animation: blurPage 9s forwards ;
 }
+/*loading page logo*/
 .logo {
   background: linear-gradient(to right, #ffffff, #8A2BE2);
   -webkit-background-clip: text;
@@ -23,7 +25,7 @@ html {
   font-family: 'Rubik Wet Paint', cursive;
   font-size: 4em;
 }
-
+/*loading page counter*/
 #counter {
   font-size:3em;
   background: linear-gradient(to right, #ffffff, #8A2BE2);
@@ -32,6 +34,7 @@ html {
   font-family: 'Inter', sans-serif;
 
 }
+/*loading pag animation */
 @keyframes blurPage {
   100%{
     opacity: 0;
