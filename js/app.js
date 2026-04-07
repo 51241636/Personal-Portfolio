@@ -35,6 +35,15 @@ const observer04=new IntersectionObserver((entries)=>{
   }
 }, {threshold : 0.1})
 observer04.observe(section04);
+const  section05=document.querySelector("#contact-Section")
+const observer05=new IntersectionObserver((entries)=>{
+  if(entries[0].isIntersecting){
+    entries[0].target.classList.add("show")
+  }else{
+    entries[0].target.classList.remove("show")
+  }
+}, {threshold : 0.1})
+observer05.observe(section05);
 
 function myFunction() {
   let nav = document.getElementById("navigationName");

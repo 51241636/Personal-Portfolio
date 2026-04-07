@@ -2812,6 +2812,37 @@ footer {
   align-items: center;
 
 }
+#contact-Section > .heading-Name{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#contact-Section.show > .heading-Name{
+  translate: 0;
+  opacity: 1;
+
+}
+#contact-Section > .contact-gridHandling >  .detail-side{
+  translate: -100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#contact-Section.show > .contact-gridHandling >  .detail-side{
+  translate: 0;
+  opacity: 1;
+
+}
+#contact-Section > .contact-gridHandling >  .fill-side{
+  translate: 100%;
+  opacity: 0;
+  transition: 800ms ease;
+}
+#contact-Section.show > .contact-gridHandling >  .fill-side{
+  translate: 0;
+  opacity: 1;
+
+}
+/*fill-side*/
 .contact-gridHandling {
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -2914,6 +2945,10 @@ footer {
   font-size: 20px;
   text-decoration: none;
 }
+.Linkedin:hover{
+  color: white;
+  transition: 1s;
+}
 .fill-side{
   max-width: 550px;
   min-height: 60px;
@@ -2959,6 +2994,10 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
 
+}
+.button01:hover{
+  background-color: #7e04e3;
+  transition: 1s;
 }
 .button01{
   width: 100px;
