@@ -850,6 +850,7 @@ footer {
   #MainDiv01-leftSide > #buttons{
     margin-right:38px;
     min-width: 330px;
+    gap: 20px;
   }
 
 
