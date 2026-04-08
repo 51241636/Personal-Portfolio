@@ -719,33 +719,34 @@ footer {
 }
 /*media query for size between 900px to 768px*/
 @media  (max-width: 900px) and (min-width: 768px){
+  #MainDiv01-leftSide{
+    text-align: center!important;
+  }
   #MainDiv01-leftSide > #Line01{
     font-size: 3em!important;
-    line-height: 80px!important;
-    /*font-weight: bolder;*/
-    /*margin-right: 30px;*/
+
   }
   #MainDiv01-leftSide > #Line02 >span{
     font-size: 1.7em!important;
-    margin-left: 68px!important;
+
     line-height: 80px!important;
-    /*text-align: center!important;*/
+
   }
   #MainDiv01-leftSide > #Line03{
     font-size: 1.8em!important;
-    margin-right: 34px;
+
     text-align: center;
   }
   #MainDiv01-leftSide > #description{
     font-size: 1.6em!important;
   }
   #MainDiv01-leftSide > .socialMediaIcon{
-    margin-right:65px;
+
     gap: 10px;
   }
   #MainDiv01-leftSide > #buttons{
     width: 500px;
-    margin-right:38px;
+
     gap: 30px;
   }
   #contact-Section > .contact-gridHandling > .fill-side{
