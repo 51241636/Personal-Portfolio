@@ -726,9 +726,10 @@ footer {
     /*margin-right: 30px;*/
   }
   #MainDiv01-leftSide > #Line02 >span{
-    font-size: 2em!important;
-    margin-right: 38px;
+    font-size: 1.7em!important;
+    margin-left: 68px!important;
     line-height: 80px!important;
+    /*text-align: center!important;*/
   }
   #MainDiv01-leftSide > #Line03{
     font-size: 1.8em!important;
