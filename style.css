@@ -817,6 +817,7 @@ footer {
     align-content:center ;
 
 
+
   }
   #MainDiv01-leftSide > #Line01{
     font-size: 1.8em;
@@ -829,6 +830,9 @@ footer {
 
     margin-right: 50px;
 
+  }
+  #MainDiv01-leftSide > #Line02{
+    text-align: center!important;
   }
   #MainDiv01-leftSide > #Line03{
     font-size: 1.5rem;
